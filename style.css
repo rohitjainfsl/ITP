@@ -20,12 +20,16 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: auto;
-  /* padding: 20px; */
 }
 
 
 /* ------------------- header ------------------ */ 
 
+.logo-text{
+  font-size: 30px;
+  font-weight: bold;
+  color: #06676f;
+}
 header {
   background: linear-gradient(
     to left,
@@ -46,7 +50,6 @@ header {
 }
 .container span {
   display: flex;
-  /* font-size: 14px; */
   color: #fff;
 }
 .container span p {
