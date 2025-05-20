@@ -12,9 +12,9 @@
 
 @media (max-width: 991px) {
   .intro-video video {
-  position:unset;
-  height: 100dvh;
-}
+    position: unset;
+    height: 100dvh;
+  }
   .content button {
     display: block;
     border: none;
@@ -36,7 +36,6 @@
     top: -229px;
     left: 0;
     right: 0;
-    /* bottom: 0; */
     justify-content: center;
     margin-top: 60px;
     margin-top: 300px;
@@ -116,6 +115,33 @@
     background-color: #06676f;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: -229px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    margin-top: 60px;
+    margin-top: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .nav-links p {
+    color: #06676f;
+    padding: 8px;
+  }
+
+  .nav-links button {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
 
 @media (max-width: 576px) {
@@ -126,7 +152,7 @@
     display: block;
     border: none;
     color: #fff;
-    margin-left: auto;
+    margin-left: 67px;
     font-size: 18px;
     padding: 3px 8px 8px 8px;
     align-items: center;
@@ -135,18 +161,31 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   .nav-links {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    box-shadow: none;
-    padding: 0;
-    border: none;
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: -229px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    margin-top: 60px;
+    margin-top: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .nav-links p {
+    color: #06676f;
+    padding: 8px;
   }
 
   .nav-links button {
-    margin-top: 0;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 
   .menu-bar {
@@ -223,4 +262,45 @@
     font-size: 14px;
     padding: 15px 0;
   }
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+
+      .intro .content h1 {
+    font-size: 24px;
+  }
+  .content button {
+        display: block;
+    border: none;
+    color: #fff;
+    margin-left: 27px;
+    font-size: 18px;
+    padding: 3px 8px 8px 8px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #06676f;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .intro .content h1 {
+    font-size: 30px;
+  }
+  .intro .content p {
+    font-size: 16px;
+  }
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .service-card {
+    padding: 15px;
+  }
+  .service-card h3 {
+    font-size: 20px;
+  }
+  .service-card p {
+    font-size: 0.9em;
+  }
+  
 }

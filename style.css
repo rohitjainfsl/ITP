@@ -22,17 +22,16 @@ body {
   margin: auto;
 }
 
-
-/* ------------------- header ------------------ */ 
+/* ------------------- header ------------------ */
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:0rem 0.5rem;
+  padding: 0rem 0.5rem;
 }
 
 header.shrink .container {
-  padding:0rem;
+  padding: 0rem;
   transition: padding 0.3s ease;
 }
 header.shrink .container #logo img {
@@ -45,24 +44,27 @@ header.shrink .container #logo img {
   gap: 1rem;
   align-items: center;
 }
-.menu-bar svg{
+.menu-bar svg {
   width: 30px;
   height: 30px;
   fill: #000;
   margin-left: 10px;
 }
 
-.logo-text{
+.logo-text {
   font-size: 30px;
   font-weight: bold;
   color: #08e6fa;
+  /* font-family: "Rubik Doodle Triangles", system-ui;
+  font-weight: 400;
+  font-style: normal; */
 }
 header {
   background: linear-gradient(
     to left,
-    rgba(255, 127, 95, 0.372),  
-    rgba(254, 180, 123, 0.304),  
-    rgba(255, 205, 112, 0.468)  
+    rgba(255, 127, 95, 0.372),
+    rgba(254, 180, 123, 0.304),
+    rgba(255, 205, 112, 0.468)
   );
   color: white;
   position: fixed;
@@ -160,10 +162,10 @@ header {
 /* ------------services section ------------*/
 
 .custom-icon {
-  width: 30px;            
+  width: 30px;
   height: 30px;
   fill: #e67e22;
-  margin-bottom: 10px;    
+  margin-bottom: 10px;
   transition: transform 0.3s ease, fill 0.3s ease;
   display: block;
   /* margin-left: auto; */
@@ -171,11 +173,9 @@ header {
 }
 
 .custom-icon:hover {
-  fill: #f78400;        
-  transform: scale(1.2);  
+  fill: #f78400;
+  transform: scale(1.2);
 }
-
-
 
 .services {
   display: flex;
@@ -284,7 +284,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.694); 
+  background: rgba(0, 0, 0, 0.694);
   /* background: rgba(6, 103, 111, 0.5); */
   z-index: 0;
 }
@@ -297,27 +297,24 @@ header {
 }
 
 .bg-1 {
-  background-image: url('assests/vechile.jpg');
+  background-image: url("assests/vechile.jpg");
 }
 
 .bg-2 {
-  background-image: url('assests/driver.jpg');
+  background-image: url("assests/driver.jpg");
 }
 
 .bg-3 {
-  background-image: url('assests/custom.jpg');
+  background-image: url("assests/custom.jpg");
 }
 
 .bg-4 {
-  background-image: url('assests/cost.jpg');
+  background-image: url("assests/cost.jpg");
 }
-
-  
-
 
 /* ------- footer section -------- */
 
-footer .containerr{
+footer .containerr {
   background-color: #06676f;
   color: white;
   text-align: center;
