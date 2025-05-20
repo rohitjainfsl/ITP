@@ -94,6 +94,8 @@
 .why-us {
   padding: 0px;
 }
+header {
+  position: unset;
 
   footer .containerr {
     font-size: 14px;
