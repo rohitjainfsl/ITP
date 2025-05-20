@@ -24,6 +24,24 @@ body {
 
 
 /* ------------------- header ------------------ */ 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.menu-bar svg{
+  width: 30px;
+  height: 30px;
+  fill: #000;
+  margin-left: 10px;
+}
 
 .logo-text{
   font-size: 30px;

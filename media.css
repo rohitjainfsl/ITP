@@ -1,7 +1,68 @@
+@media screen and (max-width: 3800px) {
+  .menu-bar svg {
+    display: none;
+  }
+  .intro-video video {
+    height: 100vh;
+  }
+  .content button {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
-  .container {
+  .content button {
+    display: block;
+    border: none;
+    color: #fff;
+    margin-top: 41px;
+    margin-left: 151px;
+    font-size: 18px;
+    padding: 3px 8px 8px 8px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #06676f;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .nav-links {
+    display: none;
     flex-direction: column;
-    text-align: center;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .nav-links p {
+    color: #06676f;
+    padding: 8px;
+  }
+
+  .nav-links button {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex !important;
+    padding: 40px;
+  }
+  .menu-bar svg {
+    display: block;
+    fill: #06676f;
+    width: 30px;
+    height: 30px;
   }
 
   .container span {
@@ -35,18 +96,61 @@
 
 /* Mobile devices */
 @media (max-width: 576px) {
-  header {
-    text-align: center;
-    padding: 10px;
+  .content button {
+    display: block;
+    border: none;
+    color: #fff;
+    margin-left: 24px;
+    font-size: 18px;
+    padding: 3px 8px 8px 8px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #06676f;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .nav-links p {
+    color: #06676f;
+    padding: 8px;
+  }
+
+  .nav-links button {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex !important;
+    padding: 40px;
+  }
+  .menu-bar svg {
+    display: block;
+    fill: #06676f;
+    width: 30px;
+    height: 30px;
   }
 
   #logo img {
     height: 50px;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 10px;
   }
 
   .intro {
@@ -90,13 +194,13 @@
     width: 24px;
     height: 24px;
   }
-  
-.why-us {
-  padding: 0px;
-}
-header {
-  position: unset;
-}
+
+  .why-us {
+    padding: 0px;
+  }
+  header {
+    position: unset;
+  }
 
   footer .containerr {
     font-size: 14px;
