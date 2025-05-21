@@ -93,17 +93,16 @@ header.shrink .container #logo img {
 }
 
 .logo-parent{
-  /* background-image: url("assests/map.jpg"); */
-  /* width: 2000px; */
+  /* width: 80%; */
   margin: 0 -0.4em;
   padding: 0.1em 0.4em;
   border-radius: 0.8em 0.3em;
   background: transparent;
   background-image: linear-gradient(
     to right,
-   rgba(255, 127, 95, 0.785),
-    rgba(254, 180, 123, 0.780),
-    rgba(255, 205, 112, 0.780)
+   rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -172,6 +171,8 @@ header {
   position: relative;
   height: 100dvh;
   overflow: hidden;
+  /* align-items: center; */
+  /* margin-left: 400px !important; */
 }
 
 .intro-video video {
@@ -193,6 +194,7 @@ header {
   z-index: 2;
   color: white;
   text-align: center;
+  align-items: center;
   /* padding: 20px; */
   max-width: 90%;
 }
