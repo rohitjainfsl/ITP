@@ -29,34 +29,6 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-  /* .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: -229px;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    margin-top: 60px;
-    margin-top: 300px;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  .nav-links p {
-    color: #06676f;
-    padding: 8px;
-  } */
-
-  .nav-links button {
-    /* display: none; */
-  }
-
-  /* .nav-links.show {
-    display: flex;
-  } */
-
   .menu-bar {
     display: none;
     cursor: pointer;
@@ -205,8 +177,6 @@
   }
   .container {
     display: flex !important;
-    /* justify-content: center !important; */
-    /* align-items: center !important; */
   }
   .menu-bar svg {
     display: block;
@@ -284,11 +254,10 @@
   /* ///////////////////////// */
 
   .nav-links {
-    /* display: none; */
     flex-direction: column;
     background: white;
     position: absolute;
-    top: 100%; /* Below menu icon */
+    top: 100%; 
     right: 0;
     width: 100%;
     padding: 1rem;
@@ -299,31 +268,27 @@
     z-index: 1000;
   }
 
-  /* Show when toggled */
+
   .nav-links.show {
     display: flex;
   }
 
-  /* List items */
   .nav-links li {
     padding: 10px 16px;
     border-bottom: 1px solid #eee;
   }
 
-  /* Links inside list */
   .nav-links li a {
     color: #06676f;
     font-size: 1rem;
     display: block;
   }
 
-  /* Hover effect */
   .nav-links li a:hover {
     background-color: #f2f2f2;
     border-radius: 4px;
   }
 
-  /* Button in the list */
   .nav-links li button {
     width: 100%;
     padding: 10px 20px;
@@ -335,8 +300,6 @@
     cursor: pointer;
     margin-top: 10px;
   }
-
-  /* //////////////////////////////// */
 
   .content button {
     display: block;
