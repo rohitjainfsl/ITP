@@ -56,7 +56,7 @@ header.shrink .container #logo img {
   /* font-size: 18px; */
   font-weight: bold;
 }
-.nav-links li a{
+.nav-links li a {
   background: transparent;
   border: none;
   text-decoration: none;
@@ -67,7 +67,7 @@ header.shrink .container #logo img {
   font-size: 18px;
   font-weight: bold;
 }
-.nav-links li button{
+.nav-links li button {
   border: none;
   background: #06676f;
   color: #fff;
@@ -87,7 +87,26 @@ header.shrink .container #logo img {
 .logo-text {
   font-size: 30px;
   font-weight: bold;
-  color: #e67e22;
+  /* color: #e67e22;*/
+  color: #06676f;
+  filter: brightness(1);
+}
+
+.logo-parent{
+  /* background-image: url("assests/map.jpg"); */
+  /* width: 2000px; */
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+   rgba(255, 127, 95, 0.372),
+    rgba(254, 180, 123, 0.304),
+    rgba(255, 205, 112, 0.468)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 header {
   background: linear-gradient(
@@ -174,7 +193,7 @@ header {
   z-index: 2;
   color: white;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   max-width: 90%;
 }
 
@@ -186,9 +205,8 @@ header {
   font-size: 18px;
 }
 .intro .content h1 {
-
   font-size: 50px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* ------------services section ------------*/
