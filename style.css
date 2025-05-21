@@ -101,9 +101,9 @@ header.shrink .container #logo img {
   background: transparent;
   background-image: linear-gradient(
     to right,
-   rgba(255, 127, 95, 0.372),
-    rgba(254, 180, 123, 0.304),
-    rgba(255, 205, 112, 0.468)
+   rgba(255, 127, 95, 0.509),
+    rgba(254, 180, 123, 0.509),
+    rgba(255, 205, 112, 0.509)
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
