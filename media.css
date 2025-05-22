@@ -97,12 +97,10 @@
     flex-direction: column;
     background: white;
     position: absolute;
-    top: -229px;
+    top: 100%;
     left: 0;
     right: 0;
     justify-content: center;
-    margin-top: 60px;
-    margin-top: 300px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -147,12 +145,10 @@
     flex-direction: column;
     background: white;
     position: absolute;
-    top: -229px;
+    top: 100%;
     left: 0;
     right: 0;
     justify-content: center;
-    margin-top: 60px;
-    margin-top: 300px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -179,7 +175,7 @@
     display: flex !important;
   }
   .menu-bar svg {
-    display: block;
+       display: block;
     fill: #06676f;
     width: 30px;
     height: 30px;
@@ -257,7 +253,7 @@
     flex-direction: column;
     background: white;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     right: 0;
     width: 100%;
     padding: 1rem;
@@ -267,7 +263,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
-
 
   .nav-links.show {
     display: flex;
@@ -333,70 +328,73 @@
   }
 }
 
- @media (max-width: 1024px) {
-            .deals-container {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto auto;
-            }
-            
-            .thailand {
-                grid-column: 1 / 3; /* Span both columns */
-                grid-row: 1 / 2;    /* First row */
-            }
-            
-            .indonesia {
-                grid-column: 2 / 3; /* Second column */
-                grid-row: 2 / 4;    /* Span rows 2 and 3 */
-            }
-            
-            .malaysia {
-                grid-column: 1 / 2; /* First column */
-                grid-row: 2 / 3;    /* Second row */
-            }
-            
-            .australia {
-                grid-column: 1 / 2; /* First column */
-                grid-row: 3 / 4;    /* Third row */
-            }
-        }
-        
-        /* 991px breakpoint */
-        @media (max-width: 991px) {
-            .deals-container {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto auto;
-            }
-            
-            .thailand {
-                grid-column: 1 / 2; /* First column */
-                grid-row: 1 / 2;    /* First row */
-            }
-            
-            .indonesia {
-                grid-column: 2 / 3; /* Second column */
-                grid-row: 1 / 3;    /* Span rows 1 and 2 */
-            }
-            
-            .malaysia {
-                grid-column: 1 / 2; /* First column */
-                grid-row: 2 / 3;    /* Second row */
-            }
-            
-            .australia {
-                grid-column: 1 / 2; /* First column */
-                grid-row: 3 / 4;    /* Third row */
-            }
-        }
-        
-        /* 767px breakpoint - all stacked */
-        @media (max-width: 767px) {
-            .deals-container {
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(4, auto);
-            }
-            
-            .thailand, .indonesia, .malaysia, .australia {
-                grid-column: 1 / 2; /* Single column */
-                grid-row: auto;     /* Auto placement */
-            }
-        }
+@media (max-width: 1024px) {
+  .deals-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .thailand {
+    grid-column: 1 / 3; /* Span both columns */
+    grid-row: 1 / 2; /* First row */
+  }
+
+  .indonesia {
+    grid-column: 2 / 3; /* Second column */
+    grid-row: 2 / 4; /* Span rows 2 and 3 */
+  }
+
+  .malaysia {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 2 / 3; /* Second row */
+  }
+
+  .australia {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 3 / 4; /* Third row */
+  }
+}
+
+/* 991px breakpoint */
+@media (max-width: 991px) {
+  .deals-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .thailand {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 1 / 2; /* First row */
+  }
+
+  .indonesia {
+    grid-column: 2 / 3; /* Second column */
+    grid-row: 1 / 3; /* Span rows 1 and 2 */
+  }
+
+  .malaysia {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 2 / 3; /* Second row */
+  }
+
+  .australia {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 3 / 4; /* Third row */
+  }
+}
+
+/* 767px breakpoint - all stacked */
+@media (max-width: 767px) {
+  .deals-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .thailand,
+  .indonesia,
+  .malaysia,
+  .australia {
+    grid-column: 1 / 2; /* Single column */
+    grid-row: auto; /* Auto placement */
+  }
+}
