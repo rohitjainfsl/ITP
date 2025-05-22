@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 991px) {
+        .photo-grid {
+                column-count: 4;
+            }
   .intro-video video {
     position: unset;
     height: 100dvh;
@@ -72,9 +75,41 @@
   .choose-card {
     height: auto;
   }
-}
+}@media (max-width: 767px) {
+            .photo-grid {
+                column-count: 2;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+            
+            body {
+                padding: 15px;
+            }
+        }
+
 
 @media (max-width: 770px) {
+    .photo-grid {
+                column-count: 3;
+                column-gap: 15px;
+                grid-template-columns: none;
+            }
+
+            .photo-item {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 15px;
+                break-inside: avoid;
+            }
+
+            .photo-item img {
+                height: auto;
+                min-height: 150px;
+                max-height: 300px;
+            }
+
   .content button {
     display: block;
     border: none;
@@ -125,6 +160,11 @@
 }
 
 @media (max-width: 576px) {
+    .col-sm-4 {
+    width: 100%;
+    float: none;
+  }
+  
   .content {
     justify-content: center;
   }
@@ -241,6 +281,12 @@
 }
 
 @media screen and (max-width: 420px) {
+            .photo-grid {
+                column-count: 1;
+            }
+        
+
+        
   .intro .content h1 {
     font-size: 32px !important;
     margin: 0;

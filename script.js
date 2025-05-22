@@ -1,3 +1,4 @@
+const navLinkItems = document.querySelectorAll(".nav-links a");
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 const hamburgerIcon = document.getElementById("hamburgerIcon");
@@ -5,7 +6,7 @@ const closeIcon = document.getElementById("closeIcon");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
-  
+
   if (navLinks.classList.contains("show")) {
     hamburgerIcon.style.display = "none";
     closeIcon.style.display = "block";
@@ -15,7 +16,6 @@ menuToggle.addEventListener("click", () => {
   }
 });
 
-const navLinkItems = document.querySelectorAll(".nav-links a");
 navLinkItems.forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("show");
@@ -36,3 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburgerIcon.style.display = "block";
   closeIcon.style.display = "none";
 });
+
+
+
+
