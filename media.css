@@ -218,7 +218,7 @@
   }
 
   #logo img {
-    /* height: 50px; */
+    height: 50px; 
     width: 100%;
   }
 
@@ -227,7 +227,7 @@
   }
 
   .intro-video video {
-    height: 70vh;
+    height: 100vh;
   }
 
   .intro .content h1 {
@@ -285,7 +285,7 @@
 
         
   .intro .content h1 {
-    font-size: 32px !important;
+    font-size: 20px !important;
     margin: 0;
     padding: 0;
     width: 285px;
