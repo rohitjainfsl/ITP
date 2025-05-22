@@ -233,7 +233,7 @@ header {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 .intro .content p {
-  font-size: 18px;
+  font-size: 20px;
 }
 .intro .content h1 {
   font-size: 50px;
@@ -253,10 +253,9 @@ header {
   margin-right: auto;
 }
 
-/* .custom-icon:hover {
-  fill: #f78400;
-  transform: scale(1.2);
-} */
+.custom-icon {
+width: 100px;
+}
 
 .services {
   display: flex;
@@ -275,9 +274,10 @@ header {
 .services-container {
   margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 0 0px;
+  padding: 0 25px;
 }
 
 .service-card {
@@ -303,6 +303,7 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .content-heading.content-heading .custom-icon {
+  width: 30px;
   fill: #e67e22;
   transform: scale(1.2);
   transition: transform 0.3s ease, fill 0.3s ease;
@@ -312,6 +313,7 @@ header {
   transform: scale(1.2);
   transition: transform 0.3s ease, fill 0.3s ease;
 }
+
 
 
 .service-card h3 {
@@ -412,6 +414,79 @@ header {
 .bg-4 {
   background-image: url("assests/cost.jpg");
 }
+
+/* ------------------------------------------------------destination section ----------------------------------------- */
+       .deals-container {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-gap: 20px;
+            padding: 25px;
+            height: 100dvh;
+        }
+        
+        .deal-card {
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .deal-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .discount-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: white;
+            color: #ff4757;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        .destination-tag {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background-color: white;
+            color: #67b35c;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        /* Large screens layout */
+        .thailand {
+            grid-column: 1 / 3; /* Span first two columns */
+            grid-row: 1 / 2;    /* First row */
+        }
+        
+        .indonesia {
+            grid-column: 3 / 4; /* Third column */
+            grid-row: 1 / 3;    /* Span both rows */
+        }
+        
+        .malaysia {
+            grid-column: 1 / 2; /* First column */
+            grid-row: 2 / 3;    /* Second row */
+        }
+        
+        .australia {
+            grid-column: 2 / 3; /* Second column */
+            grid-row: 2 / 3;    /* Second row */
+        }
+        
 
 /* ------- footer section -------- */
 
