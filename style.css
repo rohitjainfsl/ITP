@@ -481,14 +481,20 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
 }
+
+.deal-card:hover img {
+  transform: scale(1.05); 
+}
+
 
 .discount-tag {
   position: absolute;
   top: 15px;
   left: 15px;
   background-color: white;
-  color: #ff4757;
+  color: rgb(80, 248, 80);
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 3px;
@@ -500,7 +506,7 @@ main {
   bottom: 15px;
   right: 15px;
   background-color: white;
-  color: #67b35c;
+  color: #06676f;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 3px;
