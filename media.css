@@ -156,6 +156,10 @@
 }
 
 @media (max-width: 576px) {
+  .destination{
+    padding: 0 0px;
+    margin-top: 100px;
+  }
   .deals-container{
     height: auto;
   }
