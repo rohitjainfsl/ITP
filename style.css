@@ -64,7 +64,7 @@ header .container {
   text-decoration: none;
   list-style: none;
   color: #06676f;
-  padding: 8px;
+  /* padding: 8px; */
   outline: none;
   font-weight: bold;
 }
@@ -75,7 +75,7 @@ header .container {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
-  padding: 8px;
+  /* padding: 8px; */
   outline: none;
   font-size: 18px;
   font-weight: bold;
