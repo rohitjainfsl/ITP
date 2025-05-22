@@ -156,6 +156,9 @@
 }
 
 @media (max-width: 576px) {
+  .deals-container{
+    height: auto;
+  }
   .col-sm-4 {
     width: 100%;
     float: none;
