@@ -258,22 +258,19 @@
     padding: 20px;
   }
 
-  .choose-card h3 {
+  /* .choose-card h3 {
     font-size: 20px;
-  }
+  } */
 
-  .choose-card p {
-    /* font-size: 0.9em; */
-  }
 
   .custom-icon {
     width: 24px;
     height: 24px;
   }
 
-  .why-us {
+  /* .why-us {
     padding: 0px;
-  }
+  } */
   header {
     position: unset;
   }
