@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>✨ CONTACT US✨</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -15,9 +15,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
-    <!-- -----------------------------------------header section--------------------------------------------- -->
 
+  <style>
+header {
+  position: unset;
+}
+
+.contact_banner_content button {
+    border: 2px solid #06676f;
+    margin-top: 41px;
+        margin-left: 2rem;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #06676f;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.contact_banner_content button:hover {
+    background-color: #fff;
+    color: #06676f;
+    border: 2px solid #06676f;
+}
+.contact_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
+
+  <body>
+     <!-- -----------------------------------------header section--------------------------------------------- --> 
     <header class="contact_header">
       <div class="container">
         <div id="logo">
@@ -53,7 +82,6 @@
           <li><a href="#">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#">Services</a></li>
-          <li><button>Register</button></li>
         </ul>
       </div>
     </header>
@@ -63,6 +91,7 @@
     <div class="contact_banner">
         <div class="contact_banner_content">
             <h1>Contact Us</h1>
+            <button>Register Now</button>
         </div>
     </div>
     <div class="contact_main">

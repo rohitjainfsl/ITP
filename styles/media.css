@@ -249,6 +249,9 @@
 
   .nav-links.show {
     top: 56px;
+    display: block;
+    display: flex;
+    
   }
 
   #logo img {
