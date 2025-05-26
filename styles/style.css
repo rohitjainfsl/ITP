@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -278,12 +278,12 @@ main {
 .container-photo-gallery h1,
 .section-title {
   color: #06676f;
-  /* padding-top: 5rem; */
+  padding-top: 15rem;
   font-size: 28px;
   margin-bottom: 20px;
 }
 .container-photo-gallery h1{
-/* padding-top: 1rem; */
+padding-top: 1rem;
 }
 
 .services {
@@ -517,49 +517,67 @@ main {
 }
 
 /* -----------------our happy clients section------------------- */
+
 .container-photo-gallery {
-  padding: 2rem;
-  background-color: #fefefe;
-  font-family: sans-serif;
-  max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0px 45px 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-photo-gallery h1 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #06676f;
-  padding-top: 5rem;
 }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 4fr));
+  gap: 4px;
+  margin-top: 20px;
 }
 
 .photo-item {
-  width: 100%;
-  height: 250px;
+  background: white;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .photo-item img {
+  border-radius: 10px;
   width: 100%;
-  height: 100%;
+  height: 50vh;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-.photo-item img:hover {
-  transform: scale(1.05);
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
+/* Animation delays for staggered effect */
+.photo-item:nth-child(1) img { animation-delay: 0.1s; }
+.photo-item:nth-child(2) img { animation-delay: 0.2s; }
+.photo-item:nth-child(3) img { animation-delay: 0.3s; }
+.photo-item:nth-child(4) img { animation-delay: 0.4s; }
+.photo-item:nth-child(5) img { animation-delay: 0.5s; }
+.photo-item:nth-child(6) img { animation-delay: 0.6s; }
+.photo-item:nth-child(7) img { animation-delay: 0.7s; }
+.photo-item:nth-child(8) img { animation-delay: 0.8s; }
+.photo-item:nth-child(9) img { animation-delay: 0.9s; }
+.photo-item:nth-child(10) img { animation-delay: 1s; }
+.photo-item:nth-child(11) img { animation-delay: 1.1s; }
+.photo-item:nth-child(12) img { animation-delay: 1.2s; }
 
 /* ------- footer section -------- */
 
@@ -571,7 +589,84 @@ footer .containerr {
   width: 100%;
 }
 
+/* contact us page css */
 
+.contact_banner {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(#000000a6, #000000a6),
+    url(./assests/contact_cover_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_banner_content h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.contact_main {
+  padding: 3rem;
+  background-color: #e2e6e9;
+}
+
+.left_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sendnow a {
+  text-decoration: none;
+  background-color: #055a62;
+  color: #fff;
+  padding: 12px 3rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.sendnow {
+  padding-top: 20px;
+}
+
+.drop_message p {
+  text-align: justify;
+}
+
+.drop_message {
+  width: 40%;
+  box-shadow: 10px 10px 10px black;
+}
+
+.formdata {
+  margin-top: 12px;
+}
+
+.formdata label {
+  font-weight: 700;
+}
+
+.formdata input,
+textarea {
+  width: 100%;
+  padding: 10px 6px;
+  border: unset;
+  margin: 6px 0;
+  border-radius: 6px;
+  color: #a4a4ad;
+}
+
+.mapsdata iframe {
+  width: 100%;
+}
+
+.right_content {
+  width: 45%;
+}
 
 /* --------------why choose us section (alternative)------------ */
 
@@ -584,7 +679,7 @@ footer .containerr {
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
-  padding-top: 5rem;
+  padding-top: 20rem;
 }
 
 .section-title {
@@ -739,85 +834,4 @@ footer .containerr {
     height: 60px;
     font-size: 1.5rem;
   }
-}
-
-
-/* ----------------------------------------------contacts------------------- */
-
-
-.contact_banner {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(#000000a6, #000000a6),
-    url(../assests/contact_cover_image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact_banner_content h1 {
-  color: #fff;
-  font-size: 3rem;
-}
-
-.contact_main {
-  padding: 3rem;
-  background-color: #e2e6e9;
-}
-
-.left_content {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.sendnow a {
-  text-decoration: none;
-  background-color: #055a62;
-  color: #fff;
-  padding: 12px 3rem;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.sendnow {
-  padding-top: 20px;
-}
-
-.drop_message p {
-  text-align: justify;
-}
-
-.drop_message {
-  width: 40%;
-  box-shadow: 10px 10px 10px black;
-}
-
-.formdata {
-  margin-top: 12px;
-}
-
-.formdata label {
-  font-weight: 700;
-}
-
-.formdata input,
-textarea {
-  width: 100%;
-  padding: 10px 6px;
-  border: unset;
-  margin: 6px 0;
-  border-radius: 6px;
-  color: #a4a4ad;
-}
-
-.mapsdata iframe {
-  width: 100%;
-}
-
-.right_content {
-  width: 45%;
 }
