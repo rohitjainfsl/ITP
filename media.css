@@ -348,7 +348,7 @@
     display: block;
     border: none;
     color: #fff;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     font-size: 18px;
     padding: 10px 30px 12px 30px;
     align-items: center;
