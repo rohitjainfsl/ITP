@@ -282,6 +282,9 @@ main {
   font-size: 28px;
   margin-bottom: 20px;
 }
+.container-photo-gallery h1{
+padding-top: 1rem;
+}
 
 .services {
   display: flex;
