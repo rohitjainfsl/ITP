@@ -5,9 +5,12 @@
   .intro-video video {
     height: 100vh;
   }
-  .content button {
+  /* .content button {
     display: none;
-  }
+  } */
+
+
+
 }
 
 @media (max-width: 991px) {
