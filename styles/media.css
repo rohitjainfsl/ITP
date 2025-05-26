@@ -396,4 +396,8 @@
   .service-card p {
     font-size: 0.9em;
   }
+      .section-title {
+        padding-top: 26rem !important;
+        font-size: 2rem;
+    }
 }
