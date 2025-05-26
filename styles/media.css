@@ -197,7 +197,7 @@
 
 /* MOBILE DEVICES */
 @media (max-width: 767px) {
-    .photo-grid {
+  .photo-grid {
     column-count: 2;
   }
 
@@ -251,7 +251,6 @@
     top: 56px;
     display: block;
     display: flex;
-
   }
 
   #logo img {
