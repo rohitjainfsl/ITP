@@ -694,7 +694,6 @@ footer .containerr {
   padding: 20px 0;
   width: 100%;
 }
-
 /* contact us page css */
 .contact_banner {
     width: 100%;
@@ -762,4 +761,8 @@ footer .containerr {
 .right_content
 {
   width: 45%;
+}
+.drop_message
+{
+  box-shadow: 10px 10px 10px black;
 }
