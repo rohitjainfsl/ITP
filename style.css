@@ -462,7 +462,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-gap: 20px;
-  padding: 25px;
+  padding: 25px 25px 0px 25px;
   height: 85dvh;
 }
 
