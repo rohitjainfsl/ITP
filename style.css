@@ -548,11 +548,18 @@ main {
 }
 
 /* ---------------------------------------------------------our happy clients section ---------------------------- */
-.container {
-  /* max-width: 1200px; */
+.container-photo-gallery {
   margin: 0 auto;
-  padding: 0 15px;
-  /* display: grid; */
+  padding: 0px 45px 50px;
+  align-items: center;
+  justify-content: center;
+}
+.container-photo-gallery h1 {
+  color: #06676f;
+  padding-top: 40px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .photo-grid {
@@ -577,6 +584,7 @@ main {
 }
 
 .photo-item img {
+  border-radius: 10px;
   width: 80%;
   height: 50vh;
   object-fit: cover;
@@ -641,7 +649,6 @@ main {
   /* height: 50vh; */
 }
 
-
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -696,73 +703,242 @@ footer .containerr {
 }
 /* contact us page css */
 .contact_banner {
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient(#000000a6, #000000a6), url(./assests/contact_cover_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(#000000a6, #000000a6),
+    url(./assests/contact_cover_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact_banner_content h1 {
-    color: #fff;
-    font-size: 3rem;
+  color: #fff;
+  font-size: 3rem;
 }
-.contact_main
-{
+.contact_main {
   padding: 3rem;
   background-color: #e2e6e9;
 }
 .left_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .sendnow a {
-    text-decoration: none;
-    background-color: #055a62;
-    color: #fff;
-    padding: 12px 3rem;
-    border-radius: 10px;
-    font-weight: bold;
+  text-decoration: none;
+  background-color: #055a62;
+  color: #fff;
+  padding: 12px 3rem;
+  border-radius: 10px;
+  font-weight: bold;
 }
-.sendnow
-{
-    padding-top: 20px;
+.sendnow {
+  padding-top: 20px;
 }
-.drop_message p
-{
-    text-align: justify;
+.drop_message p {
+  text-align: justify;
 }
 .drop_message {
-    width: 40%;
+  width: 40%;
 }
 .formdata {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 .formdata label {
-    font-weight: 700;
+  font-weight: 700;
 }
-.formdata input, textarea {
-    width: 100%;
-    padding: 10px 6px;
-    border: unset;
-    margin: 6px 0;
-    border-radius: 6px;
-    color: #a4a4ad;
+.formdata input,
+textarea {
+  width: 100%;
+  padding: 10px 6px;
+  border: unset;
+  margin: 6px 0;
+  border-radius: 6px;
+  color: #a4a4ad;
 }
-.mapsdata iframe
-{
+.mapsdata iframe {
   width: 100%;
   /* height: 100%; */
 }
-.right_content
-{
+.right_content {
   width: 45%;
 }
-.drop_message
-{
+.drop_message {
   box-shadow: 10px 10px 10px black;
+}
+
+/* ----------------------------------------------why choose us section---------------------------------------- */
+
+.why-choose-us {
+  /* height: 100dvh; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  padding-top: 2rem;
+  color: #06676f;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: black;
+  box-shadow: 0 10px 25px rgba(238, 90, 36, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:nth-child(2) .card-icon {
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  box-shadow: 0 10px 25px rgba(68, 160, 141, 0.3);
+}
+
+.card:nth-child(3) .card-icon {
+  background: linear-gradient(135deg, #45b7d1, #3498db);
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+}
+
+.card:nth-child(4) .card-icon {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  box-shadow: 0 10px 25px rgba(245, 87, 108, 0.3);
+}
+
+.card:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-feature {
+  display: inline-block;
+  background: linear-gradient(
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .why-choose-us {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
 }
