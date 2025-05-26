@@ -278,7 +278,7 @@ main {
 .container-photo-gallery h1,
 .section-title {
   color: #06676f;
-  padding-top: 20rem;
+  padding-top: 15rem;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -676,6 +676,7 @@ textarea {
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
+  padding-top: 20rem;
 }
 
 .section-title {
