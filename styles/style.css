@@ -11,8 +11,6 @@ body {
   line-height: 1.6;
   background-color: #fff8f0;
   color: #333;
-
-  
 }
 
 .container {
@@ -261,9 +259,9 @@ main {
   border: 2px solid #06676f;
   margin-top: 41px;
   font-size: 18px;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: #06676f;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -282,7 +280,7 @@ main {
 .destination h1,
 .section-title {
   color: #06676f;
-  padding-top: 15rem;
+  /* padding-top: 15rem; */
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -298,11 +296,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px;
+   padding: 3rem 0;
 }
 
 .services h1 {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .services-container {
@@ -444,9 +442,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
+  padding: 3rem 0 6rem 0;
   color: #06676f;
-  height: 100dvh;
+  /* height: 100dvh; */
+  background-color: #fff;
 }
 
 .deals-container {
@@ -525,6 +525,7 @@ main {
 }
 
 /* -----------------our happy clients section------------------- */
+
 .carousal-section
 {
   padding: 2rem;
@@ -595,18 +596,16 @@ footer .containerr {
 .why-choose-us {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+ padding: 3rem 0;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
-  padding-top: 20rem;
 }
 
 .section-title {
   font-weight: 700;
-  padding-top: 2rem;
 }
 
 .section-subtitle {
@@ -619,7 +618,7 @@ footer .containerr {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .card {
@@ -757,92 +756,3 @@ footer .containerr {
     font-size: 1.5rem;
   }
 }
-
-/* contact us page css */
-.contact_banner {
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient(#000000a6, #000000a6), url(../assests/contact_cover_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contact_banner_content h1 {
-    color: #fff;
-    font-size: 3rem;
-}
-.contact_main
-{
-  padding: 3rem;
-  background-color: #e2e6e9;
-}
-.left_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.sendnow a {
-    text-decoration: none;
-    background-color: #055a62;
-    color: #fff;
-    padding: 12px 3rem;
-    border-radius: 10px;
-    font-weight: bold;
-}
-.sendnow
-{
-    padding-top: 20px;
-}
-.drop_message p
-{
-    text-align: justify;
-}
-.drop_message {
-    width: 40%;
-}
-.formdata {
-    margin-top: 12px;
-}
-.formdata label {
-    font-weight: 700;
-}
-.formdata input, textarea {
-    width: 100%;
-    padding: 10px 6px;
-    border: unset;
-    margin: 6px 0;
-    border-radius: 6px;
-    color: #a4a4ad;
-}
-.mapsdata iframe
-{
-  width: 100%;
-  /* height: 100%; */
-}
-.right_content
-{
-  width: 45%;
-}
-
-.map-content h2 {
-  padding-bottom: 20px;
-  margin: 0;
-    font-size: 2rem;
-    color: #06676f;
-}
-
-.drop_message h2 {
-    font-size: 1.5rem;
-    color: #06676f;
-
-}
-    .drop_message {
-      padding: 1rem;
-    width: 40%;
-    box-shadow: black 7px 7px 16px;
-}
-
-

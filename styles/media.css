@@ -101,6 +101,10 @@
     font-size: 32px;
   }
 
+  .services
+  { 
+    padding: 0;
+  }
   .choose-card {
     height: auto;
   }
@@ -402,3 +406,10 @@
     }
 }
 
+@media screen and (min-width:320px) and (max-width:420px) {
+  .services
+  { 
+    padding: 0 !important;
+  }
+  
+}
