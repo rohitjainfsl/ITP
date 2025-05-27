@@ -101,8 +101,7 @@
     font-size: 32px;
   }
 
-  .services
-  { 
+  .services {
     padding: 0;
   }
   .choose-card {
@@ -138,7 +137,6 @@
 
 /* SMALL DEVICES - TABLETS */
 @media (max-width: 770px) {
-
   .photo-grid {
     column-count: 3;
     column-gap: 15px;
@@ -160,7 +158,7 @@
 
   .services-container {
     display: grid;
-    grid-template-columns:none !important;
+    grid-template-columns: none !important;
     gap: 20px;
     padding: 0 10px;
   }
@@ -172,7 +170,6 @@
     display: block !important;
     display: flex;
   }
-
   .nav-links {
     display: none !important;
     flex-direction: column;
@@ -198,11 +195,11 @@
   }
 
   .nav-links button {
-    display:block;
+    display: block;
   }
 
   .nav-links.show {
-    display: flex;
+    display: flex !important;
   }
 
   .deals-container {
@@ -221,7 +218,11 @@
   .container {
     padding: 0 10px;
   }
-
+  .intro .content h1 {
+    font-size: 32px !important;
+    width: 500px;
+    padding: 0.5rem;
+  }
   .deals-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -238,6 +239,13 @@
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
+  .intro .content h1 {
+    font-size: 32px !important;
+    width: 500px;
+    padding: 0.5rem;
+  }
+
+  
   .destination {
     padding: 0;
     margin-top: 15rem;
@@ -257,7 +265,9 @@
   }
 
   .content button {
-    margin-left: 67px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .nav-links {
@@ -298,9 +308,9 @@
 
   .services-container {
     padding: 0 10px;
-      gap: 20px;
+    gap: 20px;
     display: grid;
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .service-card {
@@ -324,6 +334,11 @@
 
 /* EXTRA SMALL MOBILE */
 @media screen and (max-width: 420px) {
+  .content button {
+    padding: 10px 30px 12px 30px !important;
+    margin-left: 59px;
+
+  }
   .photo-grid {
     column-count: 1;
   }
@@ -381,9 +396,7 @@
     margin-top: 10px;
   }
 
-  .content button {
-    padding: 10px 30px 12px 30px;
-  }
+  
 
   .services-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -400,16 +413,14 @@
   .service-card p {
     font-size: 0.9em;
   }
-      .section-title {
-        padding-top: 26rem !important;
-        font-size: 2rem;
-    }
+  .section-title {
+    padding-top: 26rem !important;
+    font-size: 2rem;
+  }
 }
 
-@media screen and (min-width:320px) and (max-width:420px) {
-  .services
-  { 
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .services {
     padding: 0 !important;
   }
-  
 }
