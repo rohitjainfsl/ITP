@@ -275,7 +275,6 @@ main {
   cursor: pointer;
 }
 
-
 .content button:hover {
   background-color: #fff;
   color: #000;
@@ -309,7 +308,7 @@ main {
 }
 
 .services h1 {
-  padding: 0rem 0 4rem 0;
+  padding: 0rem 0 0rem 0;
   position: relative;
   font-size: 28px;
 }
@@ -323,7 +322,13 @@ main {
 }
 
 .service-card {
-  background: white;
+  fill: #06676f;
+  background: linear-gradient(
+    to left,
+    rgba(255, 127, 95, 0.74),
+    rgba(254, 180, 123, 0.452),
+    rgba(255, 205, 112, 0.502)
+  );
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -415,8 +420,13 @@ main {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: white;
-  color: rgb(80, 248, 80);
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+  color: #06676f;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 3px;
@@ -427,7 +437,12 @@ main {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background-color: white;
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
   color: #06676f;
   font-weight: bold;
   padding: 5px 10px;
@@ -527,7 +542,7 @@ main {
   width: 80px;
   height: 80px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(135deg, #f7a751, #ee9024);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -539,7 +554,8 @@ main {
 }
 
 .card:nth-child(2) .card-icon {
-  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  /* background: linear-gradient(135deg, #4ecdc4, #44a08d); */
+  background: linear-gradient(135deg, #30b085, #359c87);
   box-shadow: 0 10px 25px rgba(68, 160, 141, 0.3);
 }
 
