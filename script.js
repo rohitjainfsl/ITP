@@ -63,8 +63,20 @@ document.addEventListener("DOMContentLoaded", () => {
         0: {
           items: 1
         },
-        600: {
-          items: 2
+        480: {
+          items: 1
+        },
+        570: {
+          items: 1
+        },
+          600: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        992: {
+          items: 3
         },
         1000: {
           items: 3
