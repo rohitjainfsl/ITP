@@ -11,6 +11,8 @@ body {
   line-height: 1.6;
   background-color: #fff8f0;
   color: #333;
+
+  
 }
 
 .container {
@@ -523,90 +525,55 @@ main {
 }
 
 /* -----------------our happy clients section------------------- */
-
-.container-photo-gallery {
-  margin: 0 auto;
-  padding: 0px 45px 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-photo-gallery h1 {
+.carousal-heading {
   text-align: center;
+  padding:2rem;
 }
 
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 4fr));
-  gap: 4px;
-  margin-top: 20px;
+.carousal-heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #06676f;
 }
 
-.photo-item {
-  background: white;
+.photo-grid.owl-carousel .item {
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.photo-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.photo-item img {
   border-radius: 10px;
+}
+
+.photo-grid.owl-carousel img {
   width: 100%;
-  height: 50vh;
+  height: 250px;
   object-fit: cover;
-  display: block;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
+  border-radius: 10px;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+/* Container to center the buttons below the carousel */
+.owl-nav {
+  text-align: center;
+  /* margin-top: 20px; */
 }
 
-/* Animation delays for staggered effect */
-.photo-item:nth-child(1) img {
-  animation-delay: 0.1s;
+.owl-prev,
+.owl-next {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 60px !important;
+  /* margin: 0 10px; */
+  transition: background-color 0.3s ease;
 }
-.photo-item:nth-child(2) img {
-  animation-delay: 0.2s;
-}
-.photo-item:nth-child(3) img {
-  animation-delay: 0.3s;
-}
-.photo-item:nth-child(4) img {
-  animation-delay: 0.4s;
-}
-.photo-item:nth-child(5) img {
-  animation-delay: 0.5s;
-}
-.photo-item:nth-child(6) img {
-  animation-delay: 0.6s;
-}
-.photo-item:nth-child(7) img {
-  animation-delay: 0.7s;
-}
-.photo-item:nth-child(8) img {
-  animation-delay: 0.8s;
-}
-.photo-item:nth-child(9) img {
-  animation-delay: 0.9s;
-}
-.photo-item:nth-child(10) img {
-  animation-delay: 1s;
-}
-.photo-item:nth-child(11) img {
-  animation-delay: 1.1s;
-}
-.photo-item:nth-child(12) img {
-  animation-delay: 1.2s;
+
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 /* ------- footer section -------- */
