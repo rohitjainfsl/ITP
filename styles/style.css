@@ -22,7 +22,21 @@ body {
 }
 
 /* ------------------- header ------------------ */
+header.shrink {
+  #logo img {
+    width: 100px;
+  }
+  /* padding: 10px 30px; */
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
+.image-face {
+    position: relative;
+    width: 20%;
+    top: 40px;
+    left: 5px;
+    object-fit: cover;
+}
 header {
   background: linear-gradient(
     to left,
@@ -300,6 +314,8 @@ main {
 }
 
 .services h1 {
+  padding: 0rem 0 4rem 0;
+  position: relative;
   font-size: 28px;
 }
 

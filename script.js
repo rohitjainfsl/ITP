@@ -37,6 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
   closeIcon.style.display = "none";
 });
 
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const triggerPoint = window.innerHeight * 0.8; // 80% of viewport height
+
+    if (scrollY > triggerPoint) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
 
 
   $(document).ready(function(){
