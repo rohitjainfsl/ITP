@@ -24,27 +24,31 @@ body {
 /* ------------------- header ------------------ */
 header.shrink {
   #logo img {
-    width: 100px;
+    width: 90px;
   }
-  /* padding: 10px 30px; */
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    to left,
+    rgba(255, 127, 95, 0.74),
+    rgba(254, 180, 123, 0.452),
+    rgba(255, 205, 112, 0.502)
+  );
 }
 
 .image-face {
-    position: relative;
-    width: 20%;
-    top: 40px;
-    left: 5px;
-    object-fit: cover;
+  position: relative;
+  width: 20%;
+  top: 40px;
+  left: 5px;
+  object-fit: cover;
 }
 header {
   background: linear-gradient(
     to left,
-    rgba(255, 127, 95, 0.372),
-    rgba(254, 180, 123, 0.304),
-    rgba(255, 205, 112, 0.468)
+    rgba(255, 127, 95, 0.74),
+    rgba(254, 180, 123, 0.452),
+    rgba(255, 205, 112, 0.502)
   );
-  color: white;
+  /* color: ; */
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -59,7 +63,7 @@ header .container {
 }
 
 #logo img {
-  width: 130px;
+  width: 100px;
 }
 
 .nav-links {
@@ -75,7 +79,7 @@ header .container {
   border: none;
   text-decoration: none;
   list-style: none;
-  color: #06676f;
+  /* color: #06676f; */
   outline: none;
   font-weight: bold;
 }
@@ -682,101 +686,101 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
 }
-/* ---------------------------------------------------- contact us page css ---------------------------------------------------- */ 
+/* ---------------------------------------------------- contact us page css ---------------------------------------------------- */
 .contact_banner {
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient(#000000a6, #000000a6), url(../assests/contact_cover_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(#000000a6, #000000a6),
+    url(../assests/contact_cover_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact_banner_content h1 {
-    color: #fff;
-    font-size: 3rem;
+  color: #fff;
+  font-size: 3rem;
 }
-.contact_main
-{
+.contact_main {
   padding: 3rem;
   background-color: #e2e6e9;
 }
 .left_content {
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.right_content h2
-{
+.right_content h2 {
   color: #06676f;
   padding: 1rem 0;
 }
 
-.contact_icons span i
-{
+.contact_icons span i {
   font-size: 30px;
   color: #055a62;
-    padding: 0 6px;
+  padding: 0 6px;
 }
-.contact_icons{
+.contact_icons {
   padding-top: 10px;
 }
 
-.drop_message h2
-{
+.drop_message h2 {
   color: #06676f;
 }
 .sendnow a {
-    text-decoration: none;
-    background-color: #055a62;
-    color: #fff;
-    padding: 12px 3rem;
-    border-radius: 10px;
-    font-weight: bold;
+  text-decoration: none;
+  background-color: #055a62;
+  color: #fff;
+  padding: 12px 3rem;
+  border-radius: 10px;
+  font-weight: bold;
 }
-.sendnow
-{
-    padding-top: 20px;
+.sendnow {
+  padding-top: 20px;
 }
-.drop_message p
-{
-    text-align: justify;
+.drop_message p {
+  text-align: justify;
 }
 .drop_message {
-    width: 40%;
-    box-shadow: 7px 7px 10px gray;
-    padding: 20px;
-    border-radius: 10px;
+  width: 40%;
+  box-shadow: 7px 7px 10px gray;
+  padding: 20px;
+  border-radius: 10px;
 }
 .formdata {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 .formdata label {
-    font-weight: 700;
+  font-weight: 700;
 }
-.formdata input, textarea {
-    width: 100%;
-    padding: 10px 10px;
-    border: unset;
-    margin: 6px 0;
-    border-radius: 6px;
-    color: #a4a4ad;
+.formdata input,
+textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border: unset;
+  margin: 6px 0;
+  border-radius: 6px;
+  color: #a4a4ad;
 }
-.mapsdata iframe
-{
+.mapsdata iframe {
   width: 100%;
   /* height: 100%; */
 }
-.right_content
-{
+.right_content {
   width: 45%;
 }
 /* ------- footer section -------- */
 footer .containerr {
-  background-color: #06676f;
-  color: white;
+  /* background-color: #06676f; */
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgba(254, 180, 123, 0.304),
+    rgb(255, 205, 112)
+  );
+  color: #06676f;
   text-align: center;
   padding: 20px 0;
   width: 100%;
