@@ -525,6 +525,12 @@ main {
 }
 
 /* -----------------our happy clients section------------------- */
+.carousal-section
+{
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
 .carousal-heading {
   text-align: center;
   padding:2rem;
@@ -549,10 +555,8 @@ main {
   border-radius: 10px;
 }
 
-/* Container to center the buttons below the carousel */
 .owl-nav {
   text-align: center;
-  /* margin-top: 20px; */
 }
 
 .owl-prev,
