@@ -245,15 +245,16 @@
     padding: 0.5rem;
   }
 
-  
+
   .destination {
     padding: 0;
     /* margin-top: 15rem; */
   }
 
-  .deals-container {
-    height: auto;
-  }
+ .deals-container
+{
+  height: auto !important;
+}
 
   .col-sm-4 {
     width: 100%;
@@ -303,7 +304,7 @@
 
   .services h1 {
     font-size: 28px;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
   }
 
   .services-container {
@@ -395,7 +396,10 @@
     cursor: pointer;
     margin-top: 10px;
   }
-
+.deals-container
+{
+  height: auto !important;
+}
   
 
   .services-container {
@@ -419,7 +423,7 @@
         font-size: 2rem;
   }
   .section-title {
-    padding-top: 26rem !important;
+    /* padding-top: 26rem !important; */
     font-size: 2rem;
   }
 }
@@ -433,7 +437,7 @@
 }
 .deals-container
 {
-  height: unset;
+  height: unset !important;
 }
 .services h1
 {
