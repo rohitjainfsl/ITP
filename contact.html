@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>✨ CONTACT US✨</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    header {
+        position: unset !important;
+      }
+      .contact_banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/media.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link
@@ -17,26 +33,17 @@
     />
   </head>
 
-  <style>
-header {
-  position: unset;
-}
-.contact_banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  </style>
-
   <body>
-     <!-- -----------------------------------------header section--------------------------------------------- --> 
+    <!-- -----------------------------------------header section--------------------------------------------- -->
     <header class="contact_header">
       <div class="container">
         <div id="logo">
-         <a href="./index.html"> <img
-            src="assests/India_Tour_Partner_Logo_page-0001-removebg-preview.png"
-            alt=""
-          /> </a>
+          <a href="./index.html">
+            <img
+              src="assests/India_Tour_Partner_Logo_page-0001-removebg-preview.png"
+              alt=""
+            />
+          </a>
         </div>
         <div class="menu-bar" id="menuToggle">
           <svg
@@ -72,57 +79,77 @@ header {
     <!-- contact section starts--------------- -->
 
     <div class="contact_banner">
-        <div class="contact_banner_content">
-            <h1>Contact Us</h1>
-            <!-- <button>Register Now</button> -->
-        </div>
+      <div class="contact_banner_content">
+        <h1>Contact Us</h1>
+        <!-- <button>Register Now</button> -->
+      </div>
     </div>
     <div class="contact_main">
-        <div class="left_content">
-             <div class="drop_message">
-                <h2>Drop us a Line</h2>
-                <p>We know planning your next adventure can happen at all hours of the day, that is why we offer more choices in ways to get in touch. Up late? So are we, with extended customer service hours. Not keen to talk over the phone? Flick us an email & we’ll get back to you ASAP. We’re here to connect when it suits you.</p>
+      <div class="left_content">
+        <div class="drop_message">
+          <h2>Drop us a Line</h2>
+          <p>
+            We know planning your next adventure can happen at all hours of the
+            day, that is why we offer more choices in ways to get in touch. Up
+            late? So are we, with extended customer service hours. Not keen to
+            talk over the phone? Flick us an email & we’ll get back to you ASAP.
+            We’re here to connect when it suits you.
+          </p>
 
-                <div class="formdata">
-                <form>
-                    <label for="names">Name :</label>
-                    <input type="text" placeholder="Enter your name"><br>
-                    <label for="email">Email :</label>
-                    <input type="email" placeholder="Enter your Email"><br>
-                    <label for="email">Message:</label>
+          <div class="formdata">
+            <form>
+              <label for="names">Name :</label>
+              <input type="text" placeholder="Enter your name" /><br />
+              <label for="email">Email :</label>
+              <input type="email" placeholder="Enter your Email" /><br />
+              <label for="email">Message:</label>
 
-                    <textarea name="" id="" rows="10" cols="60">Enter your Message</textarea>
-                    <div class="sendnow">
-                        <a href="">SEND NOW</a>
-                    </div>
-                </form>
-             </div> 
-             </div>  
-             <div class="right_content">
-                 <h2>Reach Us</h2>
-                <div class="mapsdata">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.2414032549796!2d75.78975017450304!3d26.864070362181053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f27d3dad07%3A0xb2641415d32e0c18!2sFull%20Stack%20Learning!5e0!3m2!1sen!2sin!4v1747919614758!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="connect_us">
-                 <h2>Our social presence</h2>
-                 <div class="contact_icons">
-                   <a href="#"> <span><i class="fa-brands fa-facebook"></i></span></a>
-                   <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a> 
-                   <a href="#"> <span><i class="fa-brands fa-youtube"></i></span></a>
-                 </div>
-                </div>
-             </div>
-      
+              <textarea name="" id="" rows="10" cols="60">
+Enter your Message</textarea
+              >
+              <div class="sendnow">
+                <a href="">SEND NOW</a>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="right_content">
+          <h2>Reach Us</h2>
+          <div class="mapsdata">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.2414032549796!2d75.78975017450304!3d26.864070362181053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f27d3dad07%3A0xb2641415d32e0c18!2sFull%20Stack%20Learning!5e0!3m2!1sen!2sin!4v1747919614758!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="connect_us">
+            <h2>Our social presence</h2>
+            <div class="contact_icons">
+              <a href="#">
+                <span><i class="fa-brands fa-facebook"></i></span
+              ></a>
+              <a href="#"
+                ><span><i class="fa-brands fa-instagram"></i></span
+              ></a>
+              <a href="#">
+                <span><i class="fa-brands fa-youtube"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-       <footer>
+    <footer>
       <div class="containerr">
         <p>&copy; 2025 Jaipur India Tour Partner. All rights reserved.</p>
       </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
