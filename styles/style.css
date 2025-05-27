@@ -322,12 +322,7 @@ main {
 
 .service-card {
   fill: #06676f;
-  background: linear-gradient(
-    to left,
-    rgba(255, 127, 95, 0.74),
-    rgba(254, 180, 123, 0.452),
-    rgba(255, 205, 112, 0.502)
-  );
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
