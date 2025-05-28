@@ -135,7 +135,7 @@
   }
 
   .photo-item img {
-    height: auto;
+    /* height: auto; */
     min-height: 150px;
     max-height: 300px;
   }
@@ -220,22 +220,18 @@
   }
   .deals-container {
     height: auto !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    /* grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto auto !important; */
   }
 
-  .thailand,
+  /* .thailand,
   .indonesia,
   .malaysia,
   .australia {
     grid-column: 1 / 2;
     grid-row: auto;
-  }
-
-  /* .nav-links {
-    height: 100vh !important;
-   top: 100%; 
   } */
+
 }
 
 /* SMALL MOBILE */
@@ -259,11 +255,11 @@
   .destination {
     padding: 0;
   }
-
+/* 
   .deals-container {
     gap: 1rem !important;
     height: unset !important;
-  }
+  } */
 
   .col-sm-4 {
     width: 100%;
@@ -418,7 +414,7 @@
   }
   .deals-container {
     gap: 1rem !important;
-    height: auto !important;
+    height: unset !important;
   }
 
   .services-container {
@@ -483,3 +479,5 @@
     margin-top: 20px;
   }
 }
+
+

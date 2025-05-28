@@ -797,3 +797,91 @@ footer .containerr {
   padding: 20px 0;
   width: 100%;
 }
+
+
+
+.grid-container {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+  grid-template-areas:
+    "delhi delhi jodhpur"
+    "agra jaipur jodhpur";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px 250px;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-areas:
+      "delhi delhi"
+      "agra jaipur"
+      "jodhpur jodhpur";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-areas:
+      "delhi"
+      "agra"
+      "jaipur"
+      "jodhpur";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 700px);
+  }
+} 
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+.delhi {
+  grid-area: delhi;
+  background-image: url('../assests/delhi.jpg');
+}
+.agra {
+  grid-area: agra;
+  background-image: url('../assests/agra.jpeg');
+}
+.jaipur {
+  grid-area: jaipur;
+  background-image: url('../assests/jaipur.jpg');
+}
+.jodhpur {
+  grid-area: jodhpur;
+  background-image: url('../assests/jodhpur.jpeg');
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #aef7d6;
+  color: green;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.location {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
