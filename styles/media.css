@@ -5,7 +5,11 @@
   .intro-video video {
     height: 100vh;
   }
+  .see-more {
+    display: none;
+  }
 }
+
 
 /* TABLET & SMALL DESKTOP - COMMON BREAKPOINT */
 @media (max-width: 1024px) {
@@ -111,13 +115,11 @@
 
 /* SMALL DEVICES - TABLETS */
 @media (max-width: 770px) {
-  .photo-grid-faces .owl-nav {
-    /* display: none !important; */
-  }
   .why-choose-us {
     padding: 0rem 2rem 3rem 2rem !important;
   }
   .cards-container {
+    padding: 0 !important;
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
@@ -135,7 +137,7 @@
   }
 
   .photo-item img {
-    height: auto;
+    /* height: auto; */
     min-height: 150px;
     max-height: 300px;
   }
@@ -199,6 +201,24 @@
 }
 
 @media (max-width: 767px) {
+  .left_content {
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .drop_message {
+    width: 100% !important;
+    box-shadow: none !important;
+    border:solid  1px !important;
+
+  }
+  .right_content{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .contact_main{
+    padding: 1.5rem !important;
+  }
+
   .why-choose-us {
     padding: 0rem 2rem 3rem 2rem !important;
   }
@@ -220,26 +240,23 @@
   }
   .deals-container {
     height: auto !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    /* grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto auto !important; */
   }
 
-  .thailand,
-  .indonesia,
-  .malaysia,
-  .australia {
-    grid-column: 1 / 2;
-    grid-row: auto;
-  }
 
-  /* .nav-links {
-    height: 100vh !important;
-   top: 100%; 
-  } */
 }
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
+.see-more{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: 1rem "Open Sans", sans-serif;
+    color: #06676f;
+  }
   .photo-grid-faces .owl-nav {
     display: none !important;
   }
@@ -259,11 +276,11 @@
   .destination {
     padding: 0;
   }
-
+/* 
   .deals-container {
     gap: 1rem !important;
     height: unset !important;
-  }
+  } */
 
   .col-sm-4 {
     width: 100%;
@@ -345,6 +362,11 @@
 
 /* EXTRA SMALL MOBILE */
 @media screen and (max-width: 420px) {
+    .contact_main{
+    padding: 1rem !important;
+  }
+  
+
   .photo-grid-faces .owl-nav {
     display: none !important;
   }
@@ -418,7 +440,7 @@
   }
   .deals-container {
     gap: 1rem !important;
-    height: auto !important;
+    height: unset !important;
   }
 
   .services-container {
@@ -501,3 +523,5 @@
 
 
 }
+
+
