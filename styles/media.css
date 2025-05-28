@@ -112,6 +112,9 @@
 
 /* SMALL DEVICES - TABLETS */
 @media (max-width: 770px) {
+  .photo-grid-faces .owl-nav{
+    display: none !important;
+  }
     .why-choose-us{
         padding: 0rem 2rem 3rem 2rem !important;
   }
