@@ -50,25 +50,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
-  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      responsive: {
-        570: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },  
-        1000: {
-          items: 3
-        }
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    items: 1, 
+    responsive: {
+      570: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      1000: {
+        items: 3
       }
-    });
+    }
   });
+});
