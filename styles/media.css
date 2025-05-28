@@ -5,7 +5,11 @@
   .intro-video video {
     height: 100vh;
   }
+  .see-more {
+    display: none;
+  }
 }
+
 
 /* TABLET & SMALL DESKTOP - COMMON BREAKPOINT */
 @media (max-width: 1024px) {
@@ -111,9 +115,6 @@
 
 /* SMALL DEVICES - TABLETS */
 @media (max-width: 770px) {
-  .photo-grid-faces .owl-nav {
-    /* display: none !important; */
-  }
   .why-choose-us {
     padding: 0rem 2rem 3rem 2rem !important;
   }
@@ -248,7 +249,14 @@
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
-
+.see-more{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: 1rem "Open Sans", sans-serif;
+    color: #06676f;
+  }
   .photo-grid-faces .owl-nav {
     display: none !important;
   }
