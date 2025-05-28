@@ -68,7 +68,6 @@ header .container {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
   align-items: center;
   font-size: 1rem;
   list-style: none;
@@ -109,18 +108,6 @@ header .container {
   text-decoration-thickness: 3px;
   background: #06676f;
 }
-
-.nav-links li button {
-  border: none;
-  color: #fff;
-  /* background-color: #06676f; */
-  padding: 5px 18px 5px 18px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
 .menu-bar {
   display: none;
   cursor: pointer;
@@ -275,10 +262,12 @@ main {
 
 .content button {
   border: 2px solid #06676f;
-  margin-top: 41px;
   font-size: 18px;
+  margin-top: 40px;
   padding: 1rem 3rem;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 2rem;
   background-color: #06676f;
   transition: all 0.3s ease;
@@ -298,7 +287,6 @@ main {
 .destination h1,
 .section-title {
   color: #06676f;
-  /* padding-top: 15rem; */
   font-size: 28px;
   margin: 20px 0;
 }
@@ -318,7 +306,7 @@ main {
 }
 
 .services h1 {
-  /* padding: 0rem 0 4rem 0; */
+  padding: 0rem 0 0rem 0;
   position: relative;
   font-size: 28px;
 }
@@ -332,7 +320,8 @@ main {
 }
 
 .service-card {
-  background: white;
+  fill: #06676f;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -397,7 +386,7 @@ main {
   grid-template-rows: auto auto;
   grid-gap: 20px;
   padding: 25px 25px 0px 25px;
-  height: 85dvh;
+  height: auto;
 }
 
 .deal-card {
@@ -424,8 +413,13 @@ main {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: white;
-  color: rgb(80, 248, 80);
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+  color: #06676f;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 3px;
@@ -436,7 +430,12 @@ main {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background-color: white;
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
   color: #06676f;
   font-weight: bold;
   padding: 5px 10px;
@@ -491,6 +490,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   /* margin-top: 3rem; */
 }
 
@@ -536,7 +536,7 @@ main {
   width: 80px;
   height: 80px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(135deg, #f7a751, #ee9024);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -548,7 +548,8 @@ main {
 }
 
 .card:nth-child(2) .card-icon {
-  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  /* background: linear-gradient(135deg, #4ecdc4, #44a08d); */
+  background: linear-gradient(135deg, #30b085, #359c87);
   box-shadow: 0 10px 25px rgba(68, 160, 141, 0.3);
 }
 
@@ -632,7 +633,6 @@ main {
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* -----------------our happy clients section------------------- */
-
 .carousal-section {
   padding: 2rem;
   background-color: #f8f9fa;
@@ -640,52 +640,65 @@ main {
 
 .carousal-heading {
   text-align: center;
-  /* padding: 0rem 2rem 2rem; */
 }
 
 .carousal-heading h2 {
   font-size: 2rem;
   font-weight: bold;
   color: #06676f;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
-.photo-grid.owl-carousel .item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
 
-.photo-grid.owl-carousel img {
+.photo-grid-faces.owl-carousel img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
-
-.owl-nav {
-  text-align: center;
+.photo-grid-faces {
+  position: relative;
 }
 
-.owl-prev,
-.owl-next {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000;
-  width: 60px;
-  height: 60px;
+.photo-grid-faces .owl-nav {
+  position: absolute;
+  top: -20%;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+.photo-grid-faces .owl-prev,
+.photo-grid-faces .owl-next {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #000;
   border-radius: 50%;
-  line-height: 60px;
-  text-align: center;
-  font-size: 60px !important;
-  /* margin: 0 10px; */
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.owl-prev:hover,
-.owl-next:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
+.photo-grid-faces .owl-prev span {
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
 }
+.photo-grid-faces .owl-next span {
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
+}
+.photo-grid-faces .owl-prev:hover,
+.photo-grid-faces .owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: #fff !important;
+}
+
 /* ---------------------------------------------------- contact us page css ---------------------------------------------------- */
 .contact_banner {
   width: 100%;
@@ -708,7 +721,6 @@ main {
 }
 .left_content {
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   flex-wrap: wrap;
 }
