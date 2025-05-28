@@ -194,6 +194,9 @@
 
 /* MOBILE DEVICES */
 @media (max-width: 767px) {
+  .photo-grid-faces .owl-nav{
+    display: none !important;
+  }
     .why-choose-us{
         padding: 0rem 2rem 3rem 2rem !important;
   }
