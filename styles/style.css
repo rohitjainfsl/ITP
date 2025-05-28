@@ -371,96 +371,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 0px 10px; */
   padding-bottom: 3rem;
   color: #06676f;
-  /* height: 100dvh; */
   background-color: #fff;
-}
-
-.deals-container {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
-  padding: 25px 25px 0px 25px;
-  height: auto;
-}
-
-.deal-card {
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.deal-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.deal-card:hover img {
-  transform: scale(1.05);
-}
-
-.discount-tag {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: linear-gradient(
-    to left,
-    rgb(255, 127, 95),
-    rgb(254, 180, 123),
-    rgb(255, 205, 112)
-  );
-  color: #06676f;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 14px;
-}
-
-.destination-tag {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  background: linear-gradient(
-    to left,
-    rgb(255, 127, 95),
-    rgb(254, 180, 123),
-    rgb(255, 205, 112)
-  );
-  color: #06676f;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 14px;
-}
-
-.thailand {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-.indonesia {
-  grid-column: 3 / 4;
-  grid-row: 1 / 3;
-}
-
-.malaysia {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.australia {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
 }
 
 /* --------------why choose us section (alternative)------------ */
@@ -649,7 +562,6 @@ main {
   padding: 0rem 0rem 1rem 0rem;
 }
 
-
 .photo-grid-faces.owl-carousel img {
   width: 100%;
   height: 250px;
@@ -686,12 +598,12 @@ main {
 }
 
 .photo-grid-faces .owl-prev span {
-    font-size: 4rem !important;
-    margin-bottom: 1rem;
+  font-size: 4rem !important;
+  margin-bottom: 1rem;
 }
 .photo-grid-faces .owl-next span {
-    font-size: 4rem !important;
-    margin-bottom: 1rem;
+  font-size: 4rem !important;
+  margin-bottom: 1rem;
 }
 .photo-grid-faces .owl-prev:hover,
 .photo-grid-faces .owl-next:hover {
@@ -699,7 +611,7 @@ main {
   color: #fff !important;
 }
 
-/* ---------------------------------------------------- contact us page css ---------------------------------------------------- */
+/* ---------------------------------------------------- contact us page css ----------------------------------------------- */
 .contact_banner {
   width: 100%;
   height: 300px;
@@ -797,8 +709,7 @@ footer .containerr {
   padding: 20px 0;
   width: 100%;
 }
-
-
+/* -------------------------------------destination section-------------------------------------------------  */
 
 .grid-container {
   display: grid;
@@ -813,9 +724,6 @@ footer .containerr {
   grid-template-rows: 250px 250px;
 }
 
-
-
-
 @media (max-width: 900px) {
   .grid-container {
     grid-template-areas:
@@ -827,7 +735,6 @@ footer .containerr {
   }
 }
 
-
 @media (max-width: 1000px) {
   .grid-container {
     grid-template-areas:
@@ -838,7 +745,7 @@ footer .containerr {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 700px);
   }
-} 
+}
 
 .card {
   position: relative;
@@ -849,30 +756,34 @@ footer .containerr {
   color: white;
 }
 
-
 .delhi {
   grid-area: delhi;
-  background-image: url('../assests/delhi.jpg');
+  background-image: url("../assests/delhi.jpg");
 }
 .agra {
   grid-area: agra;
-  background-image: url('../assests/agra.jpeg');
+  background-image: url("../assests/agra.jpeg");
 }
 .jaipur {
   grid-area: jaipur;
-  background-image: url('../assests/jaipur.jpg');
+  background-image: url("../assests/jaipur.jpg");
 }
 .jodhpur {
   grid-area: jodhpur;
-  background-image: url('../assests/jodhpur.jpeg');
+  background-image: url("../assests/jodhpur.jpeg");
 }
 
 .label {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #aef7d6;
-  color: green;
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+  color: #06676f;
   padding: 5px 10px;
   font-weight: bold;
   border-radius: 5px;
@@ -882,7 +793,14 @@ footer .containerr {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+  color: #06676f;
+  font-weight: 600;
   padding: 5px 10px;
   border-radius: 5px;
 }
