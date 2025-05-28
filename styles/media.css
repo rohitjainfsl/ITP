@@ -199,6 +199,17 @@
 }
 
 @media (max-width: 767px) {
+  .left_content {
+    flex-direction: column;
+  }
+  .drop_message {
+    width: 100% !important;
+  }
+  .right_content{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
   .why-choose-us {
     padding: 0rem 2rem 3rem 2rem !important;
   }
@@ -224,18 +235,14 @@
     grid-template-rows: auto auto auto auto !important; */
   }
 
-  /* .thailand,
-  .indonesia,
-  .malaysia,
-  .australia {
-    grid-column: 1 / 2;
-    grid-row: auto;
-  } */
 
 }
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
+  .left_content{
+    padding: 0 !important;
+  }
   .photo-grid-faces .owl-nav {
     display: none !important;
   }
