@@ -228,6 +228,9 @@
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
+  .photo-grid-faces .owl-nav{
+    display: none !important;
+  }
     .why-choose-us{
         padding: 0rem 2rem 3rem 2rem !important;
   }
@@ -331,6 +334,9 @@
 
 /* EXTRA SMALL MOBILE */
 @media screen and (max-width: 420px) {
+  .photo-grid-faces .owl-nav {
+    display: none !important;
+  }
   .why-choose-us{
         padding: 0rem 2rem 3rem 2rem !important;
   }
@@ -432,6 +438,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
+  .photo-grid-faces .owl-nav {
+    display: none !important;
+  }
   .services {
     padding: 0 !important;
   }

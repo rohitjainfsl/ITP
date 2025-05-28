@@ -60,24 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
       autoplay: true,
       autoplayTimeout: 3000,
       responsive: {
-        0: {
-          items: 1
-        },
-        480: {
-          items: 1
-        },
         570: {
           items: 1
         },
-          600: {
-          items: 1
-        },
         768: {
-          items: 1
-        },
-        992: {
-          items: 3
-        },
+          items: 2
+        },  
         1000: {
           items: 3
         }

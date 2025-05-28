@@ -650,17 +650,6 @@ main {
   padding: 0rem 0rem 1rem 0rem;
 }
 
-/* Ensure relative positioning for absolute elements inside */
-/* .photo-grid-faces {
-  position: relative;
-} */
-
-/* Carousel items */
-/* .photo-grid-faces.owl-carousel .item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-} */
 
 .photo-grid-faces.owl-carousel img {
   width: 100%;
@@ -674,7 +663,7 @@ main {
 
 .photo-grid-faces .owl-nav {
   position: absolute;
-  top: -55px;
+  top: -20%;
   right: 10px;
   z-index: 10;
   display: flex;
@@ -725,7 +714,6 @@ main {
 }
 .left_content {
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   flex-wrap: wrap;
 }
