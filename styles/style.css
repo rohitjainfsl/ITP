@@ -785,3 +785,21 @@ footer .containerr {
   padding: 20px 0;
   width: 100%;
 }
+
+.headlines
+{
+  width: 100px;
+}
+.headlines img
+{
+  width: 100%;
+}
+.main
+{
+  display: flex;
+  align-items: center;
+}
+.now img
+{
+  transform: rotate(180deg);
+}
