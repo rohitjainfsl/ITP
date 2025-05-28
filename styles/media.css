@@ -201,13 +201,20 @@
 @media (max-width: 767px) {
   .left_content {
     flex-direction: column;
+    padding: 0 !important;
   }
   .drop_message {
     width: 100% !important;
+    box-shadow: none !important;
+    border:solid  1px !important;
+
   }
   .right_content{
     width: 100% !important;
     padding: 0 !important;
+  }
+  .contact_main{
+    padding: 1.5rem !important;
   }
 
   .why-choose-us {
@@ -240,9 +247,7 @@
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
-  .left_content{
-    padding: 0 !important;
-  }
+
   .photo-grid-faces .owl-nav {
     display: none !important;
   }
@@ -348,6 +353,11 @@
 
 /* EXTRA SMALL MOBILE */
 @media screen and (max-width: 420px) {
+    .contact_main{
+    padding: 1rem !important;
+  }
+  
+
   .photo-grid-faces .owl-nav {
     display: none !important;
   }
