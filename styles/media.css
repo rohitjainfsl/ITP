@@ -10,7 +10,6 @@
   }
 }
 
-
 /* TABLET & SMALL DESKTOP - COMMON BREAKPOINT */
 @media (max-width: 1024px) {
   .deals-container {
@@ -208,14 +207,13 @@
   .drop_message {
     width: 100% !important;
     box-shadow: none !important;
-    border:solid  1px !important;
-
+    border: solid 1px !important;
   }
-  .right_content{
+  .right_content {
     width: 100% !important;
     padding: 0 !important;
   }
-  .contact_main{
+  .contact_main {
     padding: 1.5rem !important;
   }
 
@@ -243,13 +241,11 @@
     /* grid-template-columns: 1fr !important;
     grid-template-rows: auto auto auto auto !important; */
   }
-
-
 }
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
-.see-more{
+  .see-more {
     display: block;
     justify-content: center;
     align-items: center;
@@ -276,7 +272,7 @@
   .destination {
     padding: 0;
   }
-/* 
+  /* 
   .deals-container {
     gap: 1rem !important;
     height: unset !important;
@@ -303,7 +299,7 @@
   }
 
   .nav-links.show {
-  top: 55px;
+    top: 55px;
     /* display: block;
     display: ; */
   }
@@ -362,10 +358,16 @@
 
 /* EXTRA SMALL MOBILE */
 @media screen and (max-width: 420px) {
-    .contact_main{
+  .destination h1 {
+    font-size: 18px !important;
+  }
+  .one svg {
+    padding: 11px !important;
+    margin: 7px 0px 0px 0px;
+  }
+  .contact_main {
     padding: 1rem !important;
   }
-  
 
   .photo-grid-faces .owl-nav {
     display: none !important;
@@ -407,7 +409,7 @@
   }
 
   .nav-links.show {
-      /* top: 3.86rem; */
+    /* top: 3.86rem; */
     display: flex;
   }
 
@@ -506,22 +508,13 @@
   }
   /* tour page media queries */
 
-  .tours_top h1
-  {
+  .tours_top h1 {
     font-size: 2rem !important;
   }
-  .tours_section
-  {
+  .tours_section {
     padding: 1rem !important;
   }
-  header
-  {
+  header {
     position: unset !important;
   }
-
-
-
-
 }
-
-
