@@ -504,6 +504,24 @@
   .deal-card.indonesia {
     margin-top: 20px;
   }
+  /* tour page media queries */
+
+  .tours_top h1
+  {
+    font-size: 2rem !important;
+  }
+  .tours_section
+  {
+    padding: 1rem !important;
+  }
+  header
+  {
+    position: unset !important;
+  }
+
+
+
+
 }
 
 

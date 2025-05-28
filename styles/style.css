@@ -709,6 +709,87 @@ footer .containerr {
   padding: 20px 0;
   width: 100%;
 }
+
+.headlines
+{
+  width: 100px;
+}
+.headlines img
+{
+  width: 100%;
+}
+.main
+{
+  display: flex;
+  align-items: center;
+}
+.now img
+{
+  transform: rotate(180deg);
+}
+.owl-nav
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.one svg {
+    padding: 10px !important;
+}
+
+
+/* tour section start */
+
+.tours_section
+{
+  padding: 3rem;
+  background-color: #e3e9ee;
+}
+.tour_content {
+    width: 100%;
+    background-color: #fff;
+           margin: 20px 0 40px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+.tour_details h2 {
+    color: #06676f;
+    font-size: 20px;
+    font-weight: 700;
+}
+.image_tours{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tour_left
+{
+  width: 400px;
+  /* height: 430px; */
+}
+.tour_left img
+{
+  width: 100%;
+  /* height: 100%; */
+}
+
+.tour_details a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.view_trip p {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.view_trip span
+{  
+    padding: 10px 10px 0 0;
+}
+
 /* -------------------------------------destination section-------------------------------------------------  */
 
 .grid-container {
