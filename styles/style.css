@@ -68,7 +68,6 @@ header .container {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
   align-items: center;
   font-size: 1rem;
   list-style: none;
@@ -675,17 +674,26 @@ main {
   display: flex !important;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 40px;
   height: 40px;
   background-color: #000 !important;
   color: #fff !important;
   border: 2px solid #000;
   border-radius: 50%;
-  font-size: 20px !important;
+  /* font-size: 20px !important; */
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
+.photo-grid-faces .owl-prev span {
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
+}
+.photo-grid-faces .owl-next span {
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
+}
 .photo-grid-faces .owl-prev:hover,
 .photo-grid-faces .owl-next:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;

@@ -185,6 +185,7 @@
   }
 
   .deals-container {
+    height: auto !important;
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: auto auto auto;
     display: block !important;
@@ -213,6 +214,7 @@
     padding: 0.5rem;
   }
   .deals-container {
+    height: auto !important;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
   }
@@ -252,7 +254,8 @@
 
  .deals-container
 {
-  height: auto !important;
+  gap: 1rem !important;
+  height: unset !important;
 }
 
   .col-sm-4 {
@@ -407,6 +410,7 @@
   }
 .deals-container
 {
+  gap: 1rem !important;
   height: auto !important;
 }
   
@@ -428,11 +432,9 @@
   }
 
       .section-title {
-        /* padding-top: 26rem !important; */
         font-size: 2rem;
   }
   .section-title {
-    /* padding-top: 26rem !important; */
     font-size: 2rem;
   }
 }
@@ -449,6 +451,7 @@
 }
 .deals-container
 {
+  gap: 1rem !important;
   height: unset !important;
 }
 .services h1
