@@ -24,7 +24,7 @@ body {
 /* ------------------- header ------------------ */
 header.shrink {
   #logo img {
-    width: 90px;
+    width: 100px;
   }
   background: linear-gradient(
     to left,
@@ -37,7 +37,7 @@ header.shrink {
 .image-face {
   position: relative;
   width: 20%;
-  top: 40px;
+  top: 30px;
   left: 5px;
   object-fit: cover;
 }
@@ -63,7 +63,7 @@ header .container {
 }
 
 #logo img {
-  width: 100px;
+  width: 130px;
 }
 
 .nav-links {
@@ -302,7 +302,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 3rem 0; */
+  padding: 3rem ;
 }
 
 .services h1 {
@@ -381,7 +381,7 @@ main {
 .why-choose-us {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0rem 0rem 3rem 0rem;
+  padding-bottom: 4rem;
 }
 
 .section-header {
@@ -729,7 +729,7 @@ footer .containerr {
 }
 .owl-nav
 {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
@@ -755,7 +755,7 @@ footer .containerr {
 }
 .tour_details h2 {
     color: #06676f;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
 }
 .image_tours{
@@ -766,12 +766,13 @@ footer .containerr {
 }
 .tour_left
 {
-  width: 400px;
+  width: 45%;
   /* height: 430px; */
 }
 .tour_left img
 {
   width: 100%;
+  border-radius: 10px;
   /* height: 100%; */
 }
 
