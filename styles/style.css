@@ -36,19 +36,29 @@ header.shrink {
 
 .image-face {
   position: relative;
-  width: 20%;
+  /* width: 20%; */
   top: 30px;
   left: 5px;
   object-fit: cover;
 }
+.image-frame{
+  
+    position: relative;
+    width: 15%;
+    top: 15px;
+    left: 1px;
+    object-fit: cover;
+}
+
 header {
+   transition: background 0.4s ease-in-out;
+  background: transparent;
   background: linear-gradient(
     to left,
     rgba(255, 127, 95, 0.74),
     rgba(254, 180, 123, 0.452),
     rgba(255, 205, 112, 0.502)
   );
-  /* color: ; */
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -64,6 +74,8 @@ header .container {
 
 #logo img {
   width: 130px;
+    transition: width 0.4s ease-in-out;
+
 }
 
 .nav-links {
@@ -272,6 +284,8 @@ main {
   background-color: #06676f;
   transition: all 0.3s ease;
   cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
 
 .content button:hover {
@@ -496,17 +510,13 @@ main {
 
 .card-feature {
   display: inline-block;
-  background: linear-gradient(
-    rgb(255, 127, 95),
-    rgb(254, 180, 123),
-    rgb(255, 205, 112)
-  );
+background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 500;
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  /* box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3); */
 }
 
 @media (max-width: 768px) {
