@@ -306,7 +306,7 @@
 
   #logo img {
     height: 50px;
-    width: 100%;
+     width: 108px !important;
   }
 
   .intro {
@@ -326,7 +326,7 @@
   }
 
   .services h1 {
-    font-size: 28px;
+            font-size: 1.4rem;
     /* padding-top: 2rem; */
   }
 
@@ -359,7 +359,7 @@
 /* EXTRA SMALL MOBILE */
 @media screen and (max-width: 420px) {
   .destination h1 {
-    font-size: 18px !important;
+    font-size: 1.4rem !important;
   }
   .one svg {
     padding: 11px !important;
@@ -388,12 +388,12 @@
   }
 
   .intro .content h1 {
-    font-size: 20px !important;
-    width: 285px;
+           font-size: 18px !important;
+        width: 305px;
   }
 
   .intro .content p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .nav-links {
@@ -462,10 +462,16 @@
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.4rem !important;
   }
   .section-title {
     font-size: 2rem;
+  }
+  .carousal-heading h2{
+    font-size:1.4rem !important ;
+  }
+  .carousal-heading{
+    margin-bottom: 10px;
   }
 }
 
@@ -481,13 +487,15 @@
   }
   .deals-container {
     gap: 1rem !important;
-    height: unset !important;
+    height: unset !important; 
   }
   .services h1 {
     padding: 0 !important;
+    font-size: 1.4rem !important;
   }
   .destination {
     padding: 1rem !important;
+    font-size: 1.4rem !important;
   }
   /* .why-choose-us
 {
