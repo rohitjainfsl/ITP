@@ -584,7 +584,7 @@ background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(
   position: relative;
 }
 
-.photo-grid-faces .owl-nav {
+.owl-nav {
   position: absolute;
   top: -20%;
   right: 10px;
@@ -593,8 +593,8 @@ background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(
   gap: 10px;
 }
 
-.photo-grid-faces .owl-prev,
-.photo-grid-faces .owl-next {
+ .owl-prev,
+.owl-next {
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -609,16 +609,16 @@ background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(
   transition: all 0.3s ease;
 }
 
-.photo-grid-faces .owl-prev span {
+ .owl-prev span {
   font-size: 4rem !important;
   margin-bottom: 1rem;
 }
-.photo-grid-faces .owl-next span {
+ .owl-next span {
   font-size: 4rem !important;
   margin-bottom: 1rem;
 }
-.photo-grid-faces .owl-prev:hover,
-.photo-grid-faces .owl-next:hover {
+ .owl-prev:hover,
+ .owl-next:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;
   color: #fff !important;
 }
@@ -628,7 +628,7 @@ background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(
   width: 100%;
   height: 300px;
   background-image: linear-gradient(#000000a6, #000000a6),
-    url(../assests/contact_cover_image.jpg);
+    url(../assets/contact_cover_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -890,19 +890,19 @@ footer .containerr {
 
 .delhi {
   grid-area: delhi;
-  background-image: url("../assests/delhi.jpg");
+  background-image: url("../assets/delhi.jpg");
 }
 .agra {
   grid-area: agra;
-  background-image: url("../assests/agra.jpeg");
+  background-image: url("../assets/agra.jpeg");
 }
 .jaipur {
   grid-area: jaipur;
-  background-image: url("../assests/jaipur.jpg");
+  background-image: url("../assets/jaipur.jpg");
 }
 .jodhpur {
   grid-area: jodhpur;
-  background-image: url("../assests/jodhpur.jpeg");
+  background-image: url("../assets/jodhpur.jpeg");
 }
 
 .label {
