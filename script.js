@@ -58,6 +58,7 @@ $(document).ready(function(){
     dots: true,
     autoplay: true,
     autoplayTimeout: 3000,
+    centerslide:true,
     items: 1, 
     responsive: {
       570: {
