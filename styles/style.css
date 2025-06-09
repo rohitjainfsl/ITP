@@ -21,6 +21,15 @@ body {
   margin: auto;
 }
 
+/* ---------------------------------headings-------------------------------------- */
+.service-heading {
+  width: 444px;
+  height: 81px;
+  background-image: url(../assets/sprite.png);
+  background-repeat: no-repeat;
+  background-size: 424px;
+}
+
 /* ------------------- header ------------------ */
 header.shrink {
   #logo img {
@@ -33,22 +42,6 @@ header.shrink {
     rgba(255, 205, 112, 0.502));
 }
 
-.image-face {
-  position: relative;
-  /* width: 20%; */
-  top: 30px;
-  left: 5px;
-  object-fit: cover;
-}
-
-.image-frame {
-
-  position: relative;
-  width: 15%;
-  top: 15px;
-  left: 1px;
-  object-fit: cover;
-}
 
 header {
   transition: background 0.4s ease-in-out;
@@ -212,7 +205,6 @@ main {
   box-decoration-break: clone;
 }
 
-
 @keyframes moveGradient {
 
   0%,
@@ -228,7 +220,6 @@ main {
 }
 
 /* INTRO */
-
 .intro {
   position: relative;
   height: 100dvh;
@@ -245,27 +236,12 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
   z-index: -1;
   /* filter: brightness(0.3); */
 
 }
 
-
-
-/* .introduction-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.3)),
-    url("your-background-image.jpg") center/cover no-repeat;
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  position: relative;
-  overflow: hidden;
-} */
 
  .introduction-content {
   animation: fadeInUp 1.5s ease forwards;
@@ -350,6 +326,17 @@ main {
     }
   }
 
+  z-index: 1;
+  filter: brightness(0.3);
+}
+
+.content {
+  /* width: 1100px; */
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  z-index: 100;
+}
 
 
 /* ------------services section ------------*/
@@ -440,6 +427,16 @@ main {
 
 /* --------------destination section--------------- */
 
+.service-heading2 {
+  display: flex;
+  width: 400px;
+  height: 103px;
+  background-image: url(../assets/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -206px;
+  background-size: 395px auto;
+}
+
 .destination {
   display: flex;
   flex-direction: column;
@@ -451,6 +448,16 @@ main {
 }
 
 /* --------------why choose us section (alternative)------------ */
+.service-heading3{justify-content: center;
+    align-items: center;
+    display: flex
+;
+    width: 400px;
+    height: 103px;
+    background-image: url(../assets/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -6px -91px;
+    background-size: 412px auto;}
 
 .why-choose-us {
   max-width: 1200px;
@@ -568,7 +575,16 @@ main {
 
 .card-feature {
   display: inline-block;
+
   background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -800,6 +816,7 @@ textarea {
   letter-spacing: 2px;
 }
 
+
 .rateUs a {
   text-decoration: none;
   color: white;
@@ -807,6 +824,7 @@ textarea {
       rgb(255, 127, 95),
       rgb(254, 180, 123),
       rgb(255, 205, 112));
+
   font-weight: 500;
   padding: 1rem 3rem;
   border-radius: 12px;
@@ -815,8 +833,6 @@ textarea {
   align-items: center;
   gap: 6px;
 }
-
-
 
 /* ------- footer section -------- */
 footer .containerr {
@@ -835,6 +851,7 @@ footer .containerr {
   width: 100px;
 }
 
+
 .headlines img {
   width: 100%;
 }
@@ -844,9 +861,11 @@ footer .containerr {
   align-items: center;
 }
 
+
 .now img {
   transform: rotate(180deg);
 }
+
 
 .owl-nav {
   /* width: 100%; */
@@ -857,7 +876,6 @@ footer .containerr {
 .one svg {
   padding: 10px !important;
 }
-
 
 /* tour section start */
 
@@ -1000,16 +1018,17 @@ footer .containerr {
   position: absolute;
   bottom: 10px;
   right: 10px;
+
   background: linear-gradient(to left,
       rgb(255, 127, 95),
       rgb(254, 180, 123),
       rgb(255, 205, 112));
+
   color: #06676f;
   font-weight: 600;
   padding: 5px 10px;
   border-radius: 5px;
 }
-
 
 .Review_wrapper {
   padding: 0rem 1rem;
@@ -1026,7 +1045,9 @@ footer .containerr {
   padding: 1.5rem;
   margin: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 300px
+
+  height: 300px;
+
 }
 
 .owl-carousel .testimonials:hover {
@@ -1081,6 +1102,7 @@ footer .containerr {
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
+
   background: linear-gradient(to right,
       rgb(255, 127, 95),
       rgb(255, 180, 123));
@@ -1120,5 +1142,6 @@ footer .containerr {
   padding: 0rem 0rem 1rem 0rem;
   background-color: #f8f9fa;
   text-align: center;
-  padding: 1rem;
+
 }
+
