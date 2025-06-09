@@ -738,6 +738,9 @@ textarea {
   padding: 1rem 3rem;
   border-radius: 12px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center ;
+  gap: 6px;
 }
 
 
