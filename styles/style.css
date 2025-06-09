@@ -707,16 +707,21 @@ textarea {
 }
 
 /* -------Rate us----- */
-.rateUs{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.rateUs {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 3rem;
+    background: #9b4020;
 }
 .rateUs h3{
   font-size: 2rem;
-  color: #06676f;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .rateUs a{
   text-decoration: none;
@@ -728,8 +733,9 @@ textarea {
     rgb(255, 205, 112)
   );
   font-weight: 500 ;
-  padding: 0.5rem 1rem;
+  padding: 1rem 3rem;
   border-radius: 12px;
+  text-transform: uppercase;
 }
 
 
@@ -929,7 +935,8 @@ footer .containerr {
 
 .Review_wrapper {
   padding: 2rem 1rem;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+  background-color: #f8f9fa;
 }
 
 .owl-carousel .testimonials {
@@ -1026,4 +1033,12 @@ height: 50px;
 .owl-carousel .owl-dots .owl-dot.active span {
   background: rgb(255, 127, 95);
   transform: scale(1.3);
+}
+.review-head h2{
+    font-size: 2rem;
+  font-weight: bold;
+  color: #06676f;
+  padding: 0rem 0rem 1rem 0rem;
+  background-color: #f8f9fa;
+ text-align: center;
 }
