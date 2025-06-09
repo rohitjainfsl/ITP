@@ -305,13 +305,11 @@
 
   .nav-links.show {
     top: 55px;
-    /* display: block;
-    display: ; */
   }
 
   #logo img {
     height: 50px;
-     width: 108px !important;
+     width: 90px !important;
   }
 
   .intro {

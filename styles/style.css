@@ -21,6 +21,22 @@ body {
   margin: auto;
 }
 
+/* ---------------------------------headings-------------------------------------- */
+/* .service-heading{
+  width: 100px;
+  height: 50px;
+  position: relative;
+} */
+.service-heading {
+  width: 60px; 
+  height: 60px;
+  background-image: url('../assets/image-sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px 60px; 
+  border: 1px solid red; 
+}
+
 /* ------------------- header ------------------ */
 header.shrink {
   #logo img {
@@ -268,10 +284,6 @@ main {
 
 .intro .content p {
   font-size: 20px;
-}
-
-.intro .content h1 {
-  /* font-size: 50px; */
 }
 
 .content button {
