@@ -149,7 +149,8 @@
   }
 
   .content button {
-    margin-left: 87px;
+    /* margin-left: 87px; */
+    align-items: center !important;
   }
 
   .menu-bar {
@@ -202,6 +203,7 @@
 
   .content .logo-parent .logo-text {
     font-size: 28px !important;
+    display: contents;
   }
 
   .left_content {
@@ -250,6 +252,10 @@
 
 /* SMALL MOBILE */
 @media (max-width: 576px) {
+    .content .logo-parent .logo-text {
+    font-size: 25px !important;
+    /* display: contents; */
+  }
   .see-more {
     display: block;
     justify-content: center;
@@ -270,7 +276,7 @@
   }
   .intro .content h1 {
     font-size: 32px ;
-    width: 500px;
+    width: 415px;
     padding: 0.5rem;
   }
 
@@ -290,12 +296,6 @@
 
   .content {
     justify-content: center;
-  }
-
-  .content button {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   .nav-links {
@@ -386,7 +386,7 @@
   }
   .content button {
     padding: 10px 30px 12px 30px !important;
-    margin-left: 59px;
+    margin-left: 80px;
         margin-top: 20px !important;
 
   }
