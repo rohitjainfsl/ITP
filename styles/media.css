@@ -93,7 +93,7 @@
   }
 
   .intro .content h1 {
-    font-size: 36px;
+    font-size: 32px !important;
   }
 
   .intro .content p {
@@ -148,7 +148,9 @@
     padding: 0 10px;
   }
   .content button {
-    margin-left: 130px;
+     
+        margin-left: 87px;
+
   }
 
   .menu-bar {
@@ -382,6 +384,8 @@
   .content button {
     padding: 10px 30px 12px 30px !important;
     margin-left: 59px;
+        margin-top: 20px !important;
+
   }
   .photo-grid {
     column-count: 1;
