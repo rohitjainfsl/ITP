@@ -705,6 +705,35 @@ textarea {
 .right_content {
   width: 45%;
 }
+
+/* -------Rate us----- */
+.rateUs{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.rateUs h3{
+  font-size: 2rem;
+  color: #06676f;
+}
+.rateUs a{
+  text-decoration: none;
+  color: white;
+   background-image: linear-gradient(
+    to right,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
+  font-weight: 500 ;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+}
+
+
+
 /* ------- footer section -------- */
 footer .containerr {
   /* background-color: #06676f; */
@@ -895,4 +924,106 @@ footer .containerr {
   font-weight: 600;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+
+.Review_wrapper {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+
+.owl-carousel .testimonials {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 127, 95, 0.1),
+    rgba(255, 205, 112, 0.1)
+  );
+  border-radius: 1.5em;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height:300px
+}
+
+.owl-carousel .testimonials:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 127, 95, 0.25);
+}
+.client{
+  display: flex;
+gap: 10px;
+align-items: center ;
+padding-bottom: 10px;
+}
+
+.client-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ff7f5f;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(255, 205, 112, 0.2);
+}
+.client-image {
+width: 50px;
+height: 50px;
+}
+.client-image img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.stars i {
+  color: #ffc107; /* gold stars */
+  font-size: 1.2em;
+  margin: 0 0.1em;
+}
+
+.discription .service h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.discription .service p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: linear-gradient(
+    to right,
+    rgb(255, 127, 95),
+    rgb(255, 180, 123)
+  );
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 0.5em;
+  transition: background 0.3s ease;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: rgb(255, 127, 95);
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: #ccc;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: rgb(255, 127, 95);
+  transform: scale(1.3);
 }
