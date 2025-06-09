@@ -939,7 +939,7 @@ footer .containerr {
 
 
 .Review_wrapper {
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   /* margin: 2rem 0; */
   background-color: #f8f9fa;
 }
@@ -1046,4 +1046,5 @@ height: 50px;
   padding: 0rem 0rem 1rem 0rem;
   background-color: #f8f9fa;
  text-align: center;
+ padding: 1rem;
 }
