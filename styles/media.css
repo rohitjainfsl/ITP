@@ -279,6 +279,9 @@
     font-size: 25px !important;
     /* display: contents; */
   }
+  .owl-nav{
+    display: none;
+  }
   .see-more {
     display: block;
     justify-content: center;

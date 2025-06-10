@@ -23,11 +23,11 @@ body {
 
 /* ---------------------------------headings-------------------------------------- */
 .service-heading {
-  width: 444px;
+  width: 100%;
   height: 81px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
-  background-size: 424px;
+  background-size: 328px;
 }
 
 /* ------------------- header ------------------ */
@@ -36,20 +36,23 @@ header.shrink {
     width: 100px;
   }
 
-  background: linear-gradient(to left,
+  background: linear-gradient(
+    to left,
     rgba(255, 127, 95, 0.74),
     rgba(254, 180, 123, 0.452),
-    rgba(255, 205, 112, 0.502));
+    rgba(255, 205, 112, 0.502)
+  );
 }
-
 
 header {
   transition: background 0.4s ease-in-out;
   background: transparent;
-  background: linear-gradient(to left,
-      rgba(255, 127, 95, 0.74),
-      rgba(254, 180, 123, 0.452),
-      rgba(255, 205, 112, 0.502));
+  background: linear-gradient(
+    to left,
+    rgba(255, 127, 95, 0.74),
+    rgba(254, 180, 123, 0.452),
+    rgba(255, 205, 112, 0.502)
+  );
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -66,7 +69,6 @@ header .container {
 #logo img {
   width: 130px;
   transition: width 0.4s ease-in-out;
-
 }
 
 .nav-links {
@@ -190,10 +192,12 @@ main {
   padding: 0em 0.6em 0em 0.6em;
   border-radius: 0em 0.5em 1.5em 0.8em;
   background: transparent;
-  background-image: linear-gradient(to right,
-      rgb(255, 127, 95),
-      rgb(254, 180, 123),
-      rgb(255, 205, 112));
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
   background-size: 300% auto;
   animation: moveGradient 5s ease-in-out infinite;
   /* box-shadow: 0 4px 10px rgba(255, 127, 95, 0.3); */
@@ -206,7 +210,6 @@ main {
 }
 
 @keyframes moveGradient {
-
   0%,
   100% {
     background-position: 0% center;
@@ -239,83 +242,78 @@ main {
 
   z-index: -1;
   /* filter: brightness(0.3); */
-
 }
 
-
- .introduction-content {
+.introduction-content {
   animation: fadeInUp 1.5s ease forwards;
   z-index: 999;
   color: #ffffff;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  
+
   padding: 2rem;
   border-radius: 2rem;
   background: #1c1c1cdd;
-  box-shadow: 
-    10px 10px 20px rgba(0, 0, 0, 0.6), 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6),
     -10px -10px 20px rgba(255, 255, 255, 0.05);
 }
 
-  .introduction-content h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    color: #ffd89b;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    opacity: 0.7; 
-    
-  }
+.introduction-content h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #ffd89b;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
+}
 
-  .introduction-content h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #ff7f5f;
-    font-family: "Jaro", sans-serif;
+.introduction-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ff7f5f;
+  font-family: "Jaro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.introduction-content p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.introduction-content button {
+  padding: 0.75em 2em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-image: linear-gradient(to right, #ff7f5f, #ffc371);
+  box-shadow: 0 4px 12px rgba(255, 127, 95, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.introduction-content button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 127, 95, 0.4);
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
   }
 
-  .introduction-content p {
-    font-size: 1.2rem;
-    color: #f1f1f1;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-
-  .introduction-content button {
-    padding: 0.75em 2em;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    background-image: linear-gradient(to right, #ff7f5f, #ffc371);
-    box-shadow: 0 4px 12px rgba(255, 127, 95, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .introduction-content button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(255, 127, 95, 0.4);
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      transform: translateY(40px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
+}
 
 .content {
   /* width: 1100px; */
@@ -324,7 +322,6 @@ main {
   left: 1rem;
   z-index: 100;
 }
-
 
 /* ------------services section ------------*/
 
@@ -416,12 +413,12 @@ main {
 
 .service-heading2 {
   display: flex;
-  width: 400px;
+  width: 291px;
   height: 103px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
-  background-position: 0 -170px;
-  background-size: 395px auto;
+  background-position: -1px -124px;
+  background-size: 298px auto;
 }
 
 .destination {
@@ -439,12 +436,12 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 400px;
-  height: 103px;
+  width: 100%;
+  height: 73px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
-  background-position: 27px -302px;
-  background-size: 412px auto;
+  background-position: 4px -193px;
+  background-size: 272px auto;
 }
 
 .why-choose-us {
@@ -498,10 +495,12 @@ main {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg,
-      transparent,
-      rgba(255, 255, 255, 0.4),
-      transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -566,7 +565,12 @@ main {
 .card-feature {
   display: inline-block;
 
-  background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
 
   background: linear-gradient(
     to left,
@@ -625,12 +629,12 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 400px;
-  height: 103px;
+  width: 100%;
+  height: 59px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
-      background-position: 3px -68px;
-  background-size: 410px auto;
+  background-position: 3px -68px;
+  background-size: 269px auto;
 }
 .carousal-section {
   padding: 2rem;
@@ -820,14 +824,15 @@ textarea {
   letter-spacing: 2px;
 }
 
-
 .rateUs a {
   text-decoration: none;
   color: white;
-  background-image: linear-gradient(to right,
-      rgb(255, 127, 95),
-      rgb(254, 180, 123),
-      rgb(255, 205, 112));
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
 
   font-weight: 500;
   padding: 1rem 3rem;
@@ -841,10 +846,12 @@ textarea {
 /* ------- footer section -------- */
 footer .containerr {
   /* background-color: #06676f; */
-  background: linear-gradient(to left,
-      rgb(255, 127, 95),
-      rgba(254, 180, 123, 0.304),
-      rgb(255, 205, 112));
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgba(254, 180, 123, 0.304),
+    rgb(255, 205, 112)
+  );
   color: #06676f;
   text-align: center;
   padding: 20px 0;
@@ -855,7 +862,6 @@ footer .containerr {
   width: 100px;
 }
 
-
 .headlines img {
   width: 100%;
 }
@@ -865,11 +871,9 @@ footer .containerr {
   align-items: center;
 }
 
-
 .now img {
   transform: rotate(180deg);
 }
-
 
 .owl-nav {
   /* width: 100%; */
@@ -1008,10 +1012,12 @@ footer .containerr {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: linear-gradient(to left,
-      rgb(255, 127, 95),
-      rgb(254, 180, 123),
-      rgb(255, 205, 112));
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
   color: #06676f;
   padding: 5px 10px;
   font-weight: bold;
@@ -1023,10 +1029,12 @@ footer .containerr {
   bottom: 10px;
   right: 10px;
 
-  background: linear-gradient(to left,
-      rgb(255, 127, 95),
-      rgb(254, 180, 123),
-      rgb(255, 205, 112));
+  background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgb(254, 180, 123),
+    rgb(255, 205, 112)
+  );
 
   color: #06676f;
   font-weight: 600;
@@ -1041,9 +1049,11 @@ footer .containerr {
 }
 
 .owl-carousel .testimonials {
-  background: linear-gradient(135deg,
-      rgba(255, 127, 95, 0.1),
-      rgba(255, 205, 112, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 127, 95, 0.1),
+    rgba(255, 205, 112, 0.1)
+  );
   border-radius: 1.5em;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -1051,7 +1061,6 @@ footer .containerr {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   height: 300px;
-
 }
 
 .owl-carousel .testimonials:hover {
@@ -1106,10 +1115,7 @@ footer .containerr {
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
-
-  background: linear-gradient(to right,
-      rgb(255, 127, 95),
-      rgb(255, 180, 123));
+  background: linear-gradient(to right, rgb(255, 127, 95), rgb(255, 180, 123));
   border: none;
   padding: 0.5em 1em;
   border-radius: 50%;
@@ -1146,19 +1152,17 @@ footer .containerr {
   padding: 0rem 0rem 1rem 0rem;
   background-color: #f8f9fa;
   text-align: center;
-
 }
 .service-heading5 {
-    justify-content: center;
-    align-items: center;
-    display: flex
-;
-    width: 400px;
-    height: 103px;
-    background-image: url(../assets/with-Testimonials-removebg-preview.png);
-    background-repeat: no-repeat;
-background-position: -6px -371px;
-    background-size: 410px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 103px;
+  background-image: url(../assets/with-Testimonials-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: -26px -342px;
+  background-size: 370px auto;
 }
 .testimonial-heading {
   text-align: center;
