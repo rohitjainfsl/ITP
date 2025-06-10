@@ -265,7 +265,7 @@
 
   .rateUs a {
     font-size: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 2rem !important;
     width: fit-content;
   }
 
@@ -278,6 +278,9 @@
     .content .logo-parent .logo-text {
     font-size: 25px !important;
     /* display: contents; */
+  }
+  .owl-nav{
+    display: none;
   }
   .see-more {
     display: block;
@@ -401,15 +404,16 @@
    .testimonials{
     height: 400px !important;
   }
-   .service-heading3{
+   /* .service-heading3{
   background-position: -37px -302px !important;
 
-  }
-  .service-heading4{
+  } */
+  /* .service-heading4{
     background-position: -39px -68px !important;
   }
   .service-heading5{
     background-position: -64px -371px !important;
+
   }
   .introduction-content{
     padding: 1rem !important;
@@ -428,7 +432,8 @@
   .introduction-content button{
     padding: 0.35em 1em;
     font-size: 1rem;
-  }
+}
+
 }
 
 /* EXTRA SMALL MOBILE */
