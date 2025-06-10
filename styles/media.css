@@ -278,7 +278,7 @@
         "jaipur"
         "jodhpur";
         grid-template-columns: 1fr; */
-        grid-template-rows: repeat(4, 450px) !important;
+        grid-template-rows: repeat(4, 400px) !important;
     }
     .content .logo-parent .logo-text {
     font-size: 25px !important;
