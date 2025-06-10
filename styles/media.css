@@ -516,10 +516,21 @@
   .carousal-heading{
     margin-bottom: 10px;
   }
+  .service-heading3{
+  background-position: -37px -302px !important;
+
+  }
+  .service-heading4{
+    background-position: -39px -68px !important;
+  }
+  .service-heading5{
+    background-position: -64px -371px !important;
+  }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
-  .photo-grid-faces .owl-nav {
+   .owl-nav, .owl-dots {
     display: none !important;
   }
   .services {
@@ -539,6 +550,9 @@
   .destination {
     padding: 1rem !important;
     font-size: 1.4rem !important;
+  }
+  .testimonials{
+    height: 400px !important;
   }
   /* .why-choose-us
 {
