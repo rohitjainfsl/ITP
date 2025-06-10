@@ -23,7 +23,7 @@ body {
 
 /* ---------------------------------headings-------------------------------------- */
 .service-heading {
-  width: 100%;
+  width: 300px;
   height: 81px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
@@ -436,7 +436,7 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100%;
+  width: 300px;
   height: 73px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
@@ -629,7 +629,7 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100%;
+  width: 300px;
   height: 59px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
@@ -708,7 +708,7 @@ main {
 
 /* ---------------------------------------------------- contact us page css ----------------------------------------------- */
 .contact_banner {
-  width: 100%;
+  width: 300px;
   height: 300px;
   background-image: linear-gradient(#000000a6, #000000a6),
     url(../assets/contact_cover_image.jpg);
@@ -1160,7 +1160,7 @@ footer .containerr {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100%;
+  width: 300px;
   height: 103px;
   background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
