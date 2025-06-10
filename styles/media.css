@@ -268,11 +268,7 @@
     padding: 0.8rem 2rem;
     width: fit-content;
   }
-
-  
 }
-
-
 /* SMALL MOBILE */
 @media (max-width: 576px) {
     .content .logo-parent .logo-text {

@@ -53,7 +53,7 @@ header {
     rgba(254, 180, 123, 0.452),
     rgba(255, 205, 112, 0.502)
   );
-  position: fixed;
+  position: fixed !important;
   z-index: 1000;
   width: 100%;
   text-align: center;
