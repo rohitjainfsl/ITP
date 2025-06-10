@@ -166,15 +166,16 @@
 
   .nav-links {
     position: fixed;
+    /* top: 0; */
     right: 0;
-    width: 100%;
+    width: 90%;
     height: 50%;
     background: #06676f;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    /* z-index: 1; */
     transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
@@ -186,7 +187,7 @@
     opacity: 1;
     pointer-events: auto;
     display: flex;
-    top: 3.86rem;
+    /* top: 3.86rem; */
   }
 
   .nav-links li,
@@ -335,7 +336,7 @@
   }
 
   .nav-links.show {
-    top: 55px;
+    top: 0;
   }
 
   #logo img {

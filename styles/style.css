@@ -84,7 +84,7 @@ header .container {
   border: none;
   text-decoration: none;
   list-style: none;
-  /* color: #06676f; */
+  top: 0;
   outline: none;
   font-weight: bold;
 }
@@ -118,12 +118,13 @@ header .container {
 .menu-bar {
   display: none;
   cursor: pointer;
+  z-index: 100;
 }
 
 .menu-bar svg {
   width: 30px;
   height: 30px;
-  fill: #06676f;
+  fill: #9b4020;
   margin-left: 10px;
   transition: all 0.3s ease;
 }
@@ -247,7 +248,7 @@ main {
 
 .introduction-content {
   animation: fadeInUp 1.5s ease forwards;
-  z-index: 999;
+  /* z-index: 999; */
   color: #ffffff;
   text-align: center;
   transition: all 0.3s ease-in-out;
