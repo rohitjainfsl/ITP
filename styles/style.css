@@ -25,7 +25,7 @@ body {
 .service-heading {
   width: 444px;
   height: 81px;
-  background-image: url(../assets/sprite.png);
+  background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 424px;
 }
@@ -272,21 +272,11 @@ main {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    /* color: #ffffff; */
     color: #ff7f5f;
-    /* font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal; */
-  /* font-family: "Exile", system-ui;
-  font-weight: 400;
-  font-style: normal; */
     font-family: "Jaro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
   }
 
   .introduction-content p {
@@ -326,9 +316,6 @@ main {
     }
   }
 
-  z-index: 1;
-  filter: brightness(0.3);
-}
 
 .content {
   /* width: 1100px; */
@@ -431,9 +418,9 @@ main {
   display: flex;
   width: 400px;
   height: 103px;
-  background-image: url(../assets/sprite.png);
+  background-image: url(../assets/with-Testimonials-removebg-preview.png);
   background-repeat: no-repeat;
-  background-position: 0 -206px;
+  background-position: 0 -170px;
   background-size: 395px auto;
 }
 
@@ -448,16 +435,17 @@ main {
 }
 
 /* --------------why choose us section (alternative)------------ */
-.service-heading3{justify-content: center;
-    align-items: center;
-    display: flex
-;
-    width: 400px;
-    height: 103px;
-    background-image: url(../assets/sprite.png);
-    background-repeat: no-repeat;
-    background-position: -6px -91px;
-    background-size: 412px auto;}
+.service-heading3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 400px;
+  height: 103px;
+  background-image: url(../assets/with-Testimonials-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: 27px -302px;
+  background-size: 412px auto;
+}
 
 .why-choose-us {
   max-width: 1200px;
@@ -472,6 +460,8 @@ main {
 
 .section-title {
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 
 .section-subtitle {
@@ -630,6 +620,18 @@ main {
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* -----------------our happy clients section------------------- */
+
+.service-heading4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 400px;
+  height: 103px;
+  background-image: url(../assets/with-Testimonials-removebg-preview.png);
+  background-repeat: no-repeat;
+      background-position: 3px -68px;
+  background-size: 410px auto;
+}
 .carousal-section {
   padding: 2rem;
   background-color: #f8f9fa;
@@ -637,6 +639,8 @@ main {
 
 .carousal-heading {
   text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .carousal-heading h2 {
@@ -1144,4 +1148,20 @@ footer .containerr {
   text-align: center;
 
 }
-
+.service-heading5 {
+    justify-content: center;
+    align-items: center;
+    display: flex
+;
+    width: 400px;
+    height: 103px;
+    background-image: url(../assets/with-Testimonials-removebg-preview.png);
+    background-repeat: no-repeat;
+background-position: -6px -371px;
+    background-size: 410px auto;
+}
+.testimonial-heading {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
