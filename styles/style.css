@@ -1033,11 +1033,14 @@ footer .containerr {
   padding: 5px 10px;
   border-radius: 5px;
 }
+.review-head{
+  padding: 0rem 3rem;
+
+}
 
 .Review_wrapper {
-  padding: 0rem 1rem;
   /* margin: 2rem 0; */
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
 }
 
 .owl-carousel .testimonials {
