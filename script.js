@@ -4,17 +4,34 @@ const navLinks = document.getElementById("navLinks");
 const hamburgerIcon = document.getElementById("hamburgerIcon");
 const closeIcon = document.getElementById("closeIcon");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
+// menuToggle.addEventListener("click", () => {
+//   navLinks.classList.toggle("show");
 
-  if (navLinks.classList.contains("show")) {
+//   if (navLinks.classList.contains("show")) {
+//     hamburgerIcon.style.display = "none";
+//     closeIcon.style.display = "block";
+//   } else {
+//     hamburgerIcon.style.display = "block";
+//     closeIcon.style.display = "none";
+//   }
+// });
+menuToggle.addEventListener("click", () => {
+  if (!navLinks.classList.contains("show")) {
+    navLinks.classList.add("show");
     hamburgerIcon.style.display = "none";
     closeIcon.style.display = "block";
   } else {
-    hamburgerIcon.style.display = "block";
-    closeIcon.style.display = "none";
+    navLinks.classList.remove("show");
+    
+    // Add a timeout to delay opacity fade-out
+    setTimeout(() => {
+      navLinks.classList.add("hide");
+      hamburgerIcon.style.display = "block";
+      closeIcon.style.display = "none";
+    }, 500); // 500ms delay for smooth fade-out
   }
 });
+
 
 navLinkItems.forEach((link) => {
   link.addEventListener("click", () => {
